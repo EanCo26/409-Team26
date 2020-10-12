@@ -15,8 +15,8 @@ public class MetricCalc {
     public static void main(String[] args) throws Exception {
         String outputPath = "Test Outputs/";
 
-//        File f = new File("rsrc/Test.java");
-        File f = new File("rsrc/VisitorDemo.java");
+        File f = new File("rsrc/Test.java");
+//        File f = new File("rsrc/VisitorDemo.java");
 
         FileInputStream fis = new FileInputStream(f);
         CompilationUnit cu;
@@ -32,12 +32,12 @@ public class MetricCalc {
         output += new WmcVisitor().returnOutput(cu, null);
         System.out.println(output);
 
-        //Sets format for output file names
+        //Sets format for output file names using Date and Time
         SimpleDateFormat  dateFormat = new SimpleDateFormat("'Date 'dd-MM-yyyy ' at ' HH_mm_ss");
         Date date = new Date(System.currentTimeMillis());
         outputPath += dateFormat.format(date) +".txt";
         //Creates and writes to those files- Commented out cos was sick of deleting new files after each run
-        Path file = Paths.get(outputPath);
-        Files.write(file, output.getBytes());
+//        Path file = Paths.get(outputPath);
+//        Files.write(file, output.getBytes());
     }
 }

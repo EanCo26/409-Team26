@@ -1,7 +1,7 @@
 public class example {
-    public void Sum(int a, int b) {
+    public void CheckIfs(int a, int b) {
         int result = a + b;
-        if(result>0) {
+        if(result>0 || result == 0) {
             String colour = "red";
         }
         else if(result<0){
@@ -16,32 +16,37 @@ public class example {
         }
     }
 
-    public int Check(int x, int y){
-        while(x!=y){
-            if(x>y){
-                x=x-y;
-            }
-            else{
-                y=y-x;
+    public int CheckLoops(int x, int y){
+        while(x == 0 && y >50){
+            x ++;
+            while(y >50) {
+                y--;
             }
         }
+        for(int i = 0; i++; i<5){
+
+        }
+        for (int j: list) {
+
+        }
+        do{
+
+        }while (x<5);
         return x;
     }
 
-    public int CheckAnother(int x, int y){
+    public int CheckSwitch(int x, int y){
         int r = x;
-        if(x > 5){
-            r = 5;
-            return r;
-        }
-        if(y<5){
-            r = y;
-            return r;
+        switch (r) {
+            case x:
+                r -= x;
+                return r;
+            case y:
+                r += y;
+                return r;
+            default:
+                break;
         }
         return r;
-    }
-
-    public void Last(){
-
     }
 }
