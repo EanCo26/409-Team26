@@ -30,8 +30,8 @@ public class example {
 
         }
         do{
-
-        }while (x<5);
+            x = 7;
+        }while (x<5 || x>10);
         return x;
     }
 

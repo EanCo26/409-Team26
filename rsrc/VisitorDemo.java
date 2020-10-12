@@ -205,9 +205,4 @@ public class VisitorDemo {
 
         }
     }
-
-
-    public  void Last() {
-
-    }
 }

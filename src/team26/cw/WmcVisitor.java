@@ -36,14 +36,7 @@ class WmcVisitor extends VoidVisitorAdapter {
 
     public String returnOutput(CompilationUnit cu, Object arg){
         visit(cu, arg);
-        if(!lMD.isEmpty()){
-            for (MethodDetails details: lMD) {
-                returnString += "   Method Name: " + details.getMethodName()
-                        + " has Complexity of: " + details.getMethodDecisions() + "\n";
-            }
-            lMD.clear();
-        }
-        //add method list attributes to string here?
+        recordMethodsInClass();
         return returnString;
     }
 
@@ -62,8 +55,7 @@ class WmcVisitor extends VoidVisitorAdapter {
         return num;
     }
 
-    @Override
-    public void visit(ClassOrInterfaceDeclaration cid, Object arg) {
+    public void recordMethodsInClass(){
         if(!lMD.isEmpty()){
             for (MethodDetails details: lMD) {
                 returnString += "   Method Name: " + details.getMethodName()
@@ -71,10 +63,16 @@ class WmcVisitor extends VoidVisitorAdapter {
             }
             lMD.clear();
         }
-        returnString += "Class: " + cid.getName() + " Number of Methods: " + cid.getMethods().size() + "\n";
-        super.visit(cid, arg);
     }
 
+    @Override
+    public void visit(ClassOrInterfaceDeclaration cid, Object arg) {
+
+        recordMethodsInClass();
+        returnString += "Class: " + cid.getName() + " Number of Methods: " + cid.getMethods().size() + "\n";
+
+        super.visit(cid, arg);
+    }
     @Override
     public void visit(MethodDeclaration md, Object arg) {
 
@@ -88,6 +86,7 @@ class WmcVisitor extends VoidVisitorAdapter {
 
     @Override
     public void visit(IfStmt ifStmt, Object arg) {
+
         String conditionStmt = ifStmt.getCondition().toString();
         lMD.get(lMD.size()-1).addMethodDecisions(numOfConditions(conditionStmt));
 
@@ -95,38 +94,42 @@ class WmcVisitor extends VoidVisitorAdapter {
     }
     @Override
     public void visit(SwitchStmt swStmt, Object arg) {
+
         NodeList<SwitchEntry> caseStmts = swStmt.getEntries();
         lMD.get(lMD.size()-1).addMethodDecisions(caseStmts.size());
 
         super.visit(swStmt, arg);
     }
 
+    //loop statements
     @Override
     public void visit(WhileStmt whStmt, Object arg) {
+
         String conditionStmt = whStmt.getCondition().toString();
         lMD.get(lMD.size()-1).addMethodDecisions(numOfConditions(conditionStmt));
+
         super.visit(whStmt, arg);
     }
     @Override
     public void visit(DoStmt doStmt, Object arg) {
-        lMD.get(lMD.size()-1).addMethodDecisions(1);
+
+        String conditionStmt = doStmt.getCondition().toString();
+        lMD.get(lMD.size()-1).addMethodDecisions(numOfConditions(conditionStmt));
+
         super.visit(doStmt, arg);
     }
     @Override
     public void visit(ForStmt forStmt, Object arg) {
+        
         lMD.get(lMD.size()-1).addMethodDecisions(1);
+
         super.visit(forStmt, arg);
     }
     @Override
     public void visit(ForEachStmt forEachStmt, Object arg) {
+
         lMD.get(lMD.size()-1).addMethodDecisions(1);
+
         super.visit(forEachStmt, arg);
     }
-//
-//    @Override
-//    public void visit(BlockStmt bStmt, Object arg) {
-////        for(Statement s : bStmt.getStatements()){
-////        }
-//        super.visit(bStmt, arg);
-//    }
 }
