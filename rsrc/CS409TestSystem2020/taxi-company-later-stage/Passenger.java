@@ -22,7 +22,7 @@ public class Passenger implements DrawableItem
      */
     public Passenger(Location pickup, Location destination)
     {
-        if(pickup == null) {
+        if(pickup == null ) {
             throw new NullPointerException("Pickup location");
         }
         if(destination == null) {

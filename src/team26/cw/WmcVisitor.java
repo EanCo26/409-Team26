@@ -4,38 +4,21 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
+import com.github.javaparser.ast.body.VariableDeclarator;
 import com.github.javaparser.ast.expr.Expression;
+import com.github.javaparser.ast.expr.VariableDeclarationExpr;
 import com.github.javaparser.ast.stmt.*;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import java.util.*;
 
-class MethodDetails {
-    private String methodName = "";
-    private int methodDecisions = 0;
-
-    public void setMethodName(String mName){
-        this.methodName = mName;
-    }
-    public String getMethodName(){
-        return this.methodName;
-    }
-
-    public void addMethodDecisions(int mDecisions){
-        this.methodDecisions += mDecisions;
-    }
-    public int getMethodDecisions(){
-        return this.methodDecisions;
-    }
-}
-
-class WmcVisitor extends VoidVisitorAdapter {
+public class WmcVisitor extends VoidVisitorAdapter {
 
     String returnString = "";
     private List<MethodDetails> lMD = new ArrayList<MethodDetails>();
 
     public String returnOutput(CompilationUnit cu, Object arg){
-        visit(cu, arg);
+        cu.accept(this, arg);
         recordMethodsInClass();
         return returnString;
     }
@@ -55,11 +38,21 @@ class WmcVisitor extends VoidVisitorAdapter {
         return num;
     }
 
+    Boolean isWithinMethod(Statement statement){
+        int line = statement.getEnd().get().line;
+        for (MethodDetails details: lMD) {
+            if (line >= details.getBeginLine() && line <= details.getEndLine()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void recordMethodsInClass(){
         if(!lMD.isEmpty()){
             for (MethodDetails details: lMD) {
-                returnString += "   Method Name: " + details.getMethodName()
-                        + " number of decisions: " + details.getMethodDecisions() + "\n";
+                returnString += "      Method Name: " + details.getMethodName()
+                        + " - Simple Complexity: " + details.getMethodDecisions() + "\n";
             }
             lMD.clear();
         }
@@ -69,17 +62,21 @@ class WmcVisitor extends VoidVisitorAdapter {
     public void visit(ClassOrInterfaceDeclaration cid, Object arg) {
 
         recordMethodsInClass();
-        returnString += "Class: " + cid.getName() + " Number of Methods: " + cid.getMethods().size() + "\n";
+        returnString += "   Class: " + cid.getName()
+                + " - Number of Methods: " + cid.getMethods().size() + "\n";
 
         super.visit(cid, arg);
     }
     @Override
     public void visit(MethodDeclaration md, Object arg) {
-
-        MethodDetails methodDetails = new MethodDetails();
-        methodDetails.setMethodName(md.getNameAsString());
-        methodDetails.addMethodDecisions(1);
-        lMD.add(methodDetails);
+        lMD.add(new MethodDetails());
+        lMD.get(lMD.size()-1).setMethodName(md.getNameAsString());
+        lMD.get(lMD.size()-1).addMethodDecisions(1);
+        md.getBody().ifPresent(blockStmt -> {
+            BlockStmt block = md.getBody().get();
+            lMD.get(lMD.size()-1).setMethodLines(block.getBegin().get().line,
+                    block.getEnd().get().line);
+        });
 
         super.visit(md, arg);
     }
@@ -88,16 +85,18 @@ class WmcVisitor extends VoidVisitorAdapter {
     public void visit(IfStmt ifStmt, Object arg) {
 
         String conditionStmt = ifStmt.getCondition().toString();
-        lMD.get(lMD.size()-1).addMethodDecisions(numOfConditions(conditionStmt));
-
+        if(isWithinMethod(ifStmt)) {
+            lMD.get(lMD.size() - 1).addMethodDecisions(numOfConditions(conditionStmt));
+        }
         super.visit(ifStmt, arg);
     }
     @Override
     public void visit(SwitchStmt swStmt, Object arg) {
 
-        NodeList<SwitchEntry> caseStmts = swStmt.getEntries();
-        lMD.get(lMD.size()-1).addMethodDecisions(caseStmts.size());
-
+        if(isWithinMethod(swStmt)) {
+            NodeList<SwitchEntry> caseStmts = swStmt.getEntries();
+            lMD.get(lMD.size() - 1).addMethodDecisions(caseStmts.size());
+        }
         super.visit(swStmt, arg);
     }
 
@@ -106,30 +105,34 @@ class WmcVisitor extends VoidVisitorAdapter {
     public void visit(WhileStmt whStmt, Object arg) {
 
         String conditionStmt = whStmt.getCondition().toString();
-        lMD.get(lMD.size()-1).addMethodDecisions(numOfConditions(conditionStmt));
-
+        if(isWithinMethod(whStmt)) {
+            lMD.get(lMD.size() - 1).addMethodDecisions(numOfConditions(conditionStmt));
+        }
         super.visit(whStmt, arg);
     }
     @Override
     public void visit(DoStmt doStmt, Object arg) {
 
         String conditionStmt = doStmt.getCondition().toString();
-        lMD.get(lMD.size()-1).addMethodDecisions(numOfConditions(conditionStmt));
-
+        if(isWithinMethod(doStmt)) {
+            lMD.get(lMD.size() - 1).addMethodDecisions(numOfConditions(conditionStmt));
+        }
         super.visit(doStmt, arg);
     }
     @Override
     public void visit(ForStmt forStmt, Object arg) {
-        
-        lMD.get(lMD.size()-1).addMethodDecisions(1);
 
+        if(isWithinMethod(forStmt)) {
+            lMD.get(lMD.size() - 1).addMethodDecisions(1);
+        }
         super.visit(forStmt, arg);
     }
     @Override
     public void visit(ForEachStmt forEachStmt, Object arg) {
 
-        lMD.get(lMD.size()-1).addMethodDecisions(1);
-
+        if(isWithinMethod(forEachStmt)) {
+            lMD.get(lMD.size() - 1).addMethodDecisions(1);
+        }
         super.visit(forEachStmt, arg);
     }
 }
