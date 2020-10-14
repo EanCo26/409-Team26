@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 public class MetricCalc {
+
     public static void main(String[] args) throws Exception {
 
         List<String> filesInDir = new ArrayList<String>();
@@ -42,7 +43,7 @@ public class MetricCalc {
             //Output of test that is stored in strings to be written to files
             // commented Wmc Visitor cos it runs but needs tweaking
             String output = "File: " + filePath + "\n";
-            output += new WmcVisitor().returnOutput(cu, null);
+            output += new RfcVisitor().returnOutput(cu, null);
             outputsList.add(output);
         }
 
@@ -56,7 +57,7 @@ public class MetricCalc {
         Path file = Paths.get(outputFilePath);
 
         //Either add it all to one string for writing to one file OR
-        //Different strings that output to seperate files
+        //Different strings that output to separate files
         String output = "";
         for (String out: outputsList){
             output+=out;

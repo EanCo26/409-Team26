@@ -1,0 +1,80 @@
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
+Class Name: Animal - Number of Methods: 6
+Optional.emptyOptional[field]Optional[field]Optional[field]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
+Class Name: Counter - Number of Methods: 4
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
+Class Name: Field - Number of Methods: 12
+Optional[Randomizer]Optional[location]Optional[location]Optional.emptyOptional[location]Optional[location]Optional.emptyOptional.emptyOptional[adjacent]Optional.emptyOptional.emptyOptional[free]Optional.emptyOptional[free]Optional[free]Optional[location]Optional[location]Optional[locations]Optional[Collections]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
+Class Name: FieldStats - Number of Methods: 7
+Optional.emptyOptional[counters]Optional[buffer]Optional[buffer]Optional[buffer]Optional[buffer]Optional[counters]Optional[buffer]Optional.emptyOptional[counters]Optional[counter]Optional[counters]Optional[count]Optional[counters]Optional[counters]Optional[animalClass]Optional[counters]Optional[count]Optional.emptyOptional[counters]Optional[info]Optional[counters]Optional.emptyOptional[field]Optional.emptyOptional[field]Optional[field]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
+Class Name: Fox - Number of Methods: 7
+Optional[Randomizer]Optional[rand]Optional[rand]Optional.emptyOptional.emptyOptional.emptyOptional.emptyOptional.emptyOptional[getField()]Optional.emptyOptional.emptyOptional.emptyOptional.emptyOptional.emptyOptional[field]Optional[adjacent]Optional[it]Optional[field]Optional[rabbit]Optional[rabbit]Optional[it]Optional.emptyOptional[field]Optional.emptyOptional[free]Optional[newFoxes]Optional[free]Optional.emptyOptional[rand]Optional[rand]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
+Class Name: GraphView - Number of Methods: 5
+Optional[graph]Optional.emptyOptional[colors]Optional[colors]Optional[graph]Optional[stats]Optional[stats]Optional[graph]Optional[frame]Optional[frame]Optional[contentPane]Optional[bottom]Optional[bottom]Optional[bottom]Optional[contentPane]Optional[frame]Optional[frame]Optional[frame]Class Name: GraphPanel - Number of Methods: 7
+Optional.emptyOptional[graphImage]Optional[graphImage]Optional[graphImage]Optional[g]Optional[g]Optional[g]Optional[g]Optional.emptyOptional[classes]Optional[classes]Optional[it]Optional[it]Optional[stats]Optional[stats]Optional[stats]Optional[graphImage]Optional[graphImage]Optional[graphImage]Optional[g]Optional.emptyOptional[g]Optional[g]Optional[g]Optional[g]Optional.emptyOptional[g]Optional[g]Optional[g]Optional[g]Optional.emptyOptional[stepLabel]Optional[countLabel]Optional[graphImage]Optional[graphImage]Optional[graphImage]Optional[tmpImage]Optional[gtmp]Optional[gtmp]Optional[g]Optional[g]Optional[g]Optional.emptyOptional[graphImage]Optional[g]Optional[g]Optional.emptyOptional[graphImage]Optional[graphImage]Optional[g]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
+Class Name: GridView - Number of Methods: 5
+Optional.emptyOptional.emptyOptional.emptyOptional[contents]Optional[contents]Optional[contents]Optional.emptyOptional.emptyOptional[colors]Optional[colors]Optional.emptyOptional.emptyOptional[stepLabel]Optional[stats]Optional[fieldView]Optional[field]Optional[fieldView]Optional[animal]Optional[stats]Optional[fieldView]Optional[field]Optional[field]Optional[stats]Optional[population]Optional[fieldView]Optional[stats]Optional[stats]Class Name: FieldView - Number of Methods: 4
+Optional[size]Optional.emptyOptional[fieldView]Optional[fieldImage]Optional[g]Optional[g]Optional.emptyOptional[size]Optional[g]Optional[g]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
+Class Name: Location - Number of Methods: 5
+Optional[other]Optional[other]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
+Class Name: Rabbit - Number of Methods: 5
+Optional[Randomizer]Optional[rand]Optional.emptyOptional.emptyOptional.emptyOptional[getField()]Optional.emptyOptional.emptyOptional.emptyOptional.emptyOptional[field]Optional.emptyOptional[free]Optional[newRabbits]Optional[free]Optional.emptyOptional[rand]Optional[rand]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
+Class Name: Randomizer - Number of Methods: 2
+Optional[rand]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
+Class Name: Simulator - Number of Methods: 7
+Optional[System.out]Optional[System.out]Optional[view]Optional[view]Optional[views]Optional[view]Optional[view]Optional[views]Optional.emptyOptional.emptyOptional.emptyOptional[views.get(0)]Optional[it]Optional[animal]Optional[animal]Optional[it]Optional[it]Optional[animals]Optional[animals]Optional.emptyOptional[animals]Optional[view]Optional.emptyOptional.emptyOptional[view]Optional[Randomizer]Optional[field]Optional[rand]Optional[rand]Optional[animals]Optional[animals]Optional[field]Optional[field]Optional[Thread]File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
+Class Name: SimulatorView - Number of Methods: 4
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
+Class Name: Actor - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
+Class Name: City - Number of Methods: 6
+Optional[items]Optional[items]Optional[items]Optional[items]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
+Class Name: CityGUI - Number of Methods: 1
+Optional[city]Optional[city]Optional[getContentPane()]Optional.emptyOptional.emptyOptional.emptyOptional[cityView]Optional[cityView]Optional[cityView]Optional[city]Optional[items]Optional[item]Optional[cityView]Optional[items]Optional[cityView]Class Name: CityView - Number of Methods: 4
+Optional.emptyOptional[size]Optional.emptyOptional[cityView]Optional[cityImage]Optional[g]Optional[g]Optional[g]Optional[g]Optional[g]Optional[g]Optional.emptyOptional[size]Optional[g]Optional[g]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
+Class Name: DrawableItem - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
+Class Name: Item - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
+Class Name: Location - Number of Methods: 7
+Optional[destination]Optional[destination]Optional[Math]Optional[Math]Optional[Math]Optional[otherLocation]Optional[otherLocation]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
+Class Name: MissingPassengerException - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
+Class Name: Passenger - Number of Methods: 5
+Optional[new ImageIcon(getClass().getResource("images/person.jpg"))]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
+Class Name: PassengerSource - Number of Methods: 3
+Optional[rand]Optional.emptyOptional[company]Optional[city]Optional[city]Optional[city]Optional[rand]Optional[rand]Optional[rand]Optional[rand]Optional[pickupLocation]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
+Class Name: Shuttle - Number of Methods: 6
+Optional[destinations]Optional.emptyOptional[passengers]Optional[destinations]Optional.emptyFile: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
+Class Name: Simulation - Number of Methods: 3
+Optional[actors]Optional[actors]Optional[actors]Optional.emptyOptional.emptyOptional[actor]Optional[Thread]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
+Class Name: Taxi - Number of Methods: 7
+Optional[new ImageIcon(getClass().getResource("images/taxi.jpg"))]Optional[new ImageIcon(getClass().getResource("images/taxi+person.jpg"))]Optional.emptyOptional.emptyOptional[getLocation()]Optional.emptyOptional[next]Optional.emptyOptional.emptyOptional.emptyOptional.emptyOptional.emptyOptional.emptyOptional.emptyOptional.emptyFile: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
+Class Name: TaxiCompany - Number of Methods: 6
+Optional.emptyOptional.emptyOptional[assignments]Optional[vehicle]Optional[assignments]Optional[city]Optional[vehicle]Optional[vehicles]Optional[it]Optional[vehicle]Optional[it]Optional[city]Optional[city]Optional[rand]Optional[rand]Optional[vehicles]Optional[city]File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
+Class Name: Vehicle - Number of Methods: 13
+Optional[company]Optional[company]File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
+Class Name: LogAnalyzer - Number of Methods: 3
+Optional[reader]Optional[entry]Optional[reader]Optional[System.out]Optional[System.out]Optional[reader]File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
+Class Name: LogEntry - Number of Methods: 6
+Optional[tokenizer]Optional.emptyOptional.emptyOptional[buffer]Optional[buffer]Optional[buffer]Optional[buffer.toString()]Optional[when]Optional[Calendar]Optional[when]File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
+Class Name: LogfileCreator - Number of Methods: 2
+Optional[System.err]Optional.emptyOptional[Arrays]Optional[writer]Optional[writer]Optional[rand]Optional[rand]Optional[rand]Optional[rand]File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
+Class Name: LogfileReader - Number of Methods: 7
+Optional[System.out]Optional[getClass().getClassLoader()]Optional[fileURL]Optional[logfile]Optional[entries]Optional[logfile]Optional[logfile]Optional[System.out]Optional[System.out]Optional.emptyOptional[Collections]Optional.emptyOptional[dataIterator]Optional[dataIterator]Optional[System.err]Optional[entries]Optional[System.out]Optional[data]File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
+Class Name: LoglineTokenizer - Number of Methods: 1
+Optional[System.out]Optional[tokenizer]File: rsrc\Test.java
+Class Name: example - Number of Methods: 4
+File: rsrc\VisitorDemo.java
+Class Name: CarElement - Number of Methods: 1
+Class Name: CarElementVisitor - Number of Methods: 4
+Class Name: Wheel - Number of Methods: 3
+Optional[visitor]Class Name: Body - Number of Methods: 2
+Optional[visitor]Class Name: Engine - Number of Methods: 3
+Optional[visitor]Class Name: Car - Number of Methods: 1
+Optional[List]Optional[element]Optional[visitor]Class Name: CarElementDoVisitor - Number of Methods: 4
+Optional[System.out]Optional[System.out]Optional[System.out]Optional[System.out]Class Name: CarElementPrintVisitor - Number of Methods: 4
+Optional[System.out]Optional[System.out]Optional[System.out]Optional[System.out]Class Name: SalesVisitor - Number of Methods: 4
+Optional[System.out]Optional[System.out]Class Name: MechanicVisitor - Number of Methods: 4
+Optional[System.out]Optional[System.out]Class Name: VisitorDemo - Number of Methods: 1
+Optional[car]Optional[car]Optional[car]Optional[car]
