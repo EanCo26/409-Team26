@@ -43,7 +43,11 @@ public class MetricCalc {
             //Output of test that is stored in strings to be written to files
             // commented Wmc Visitor cos it runs but needs tweaking
             String output = "File: " + filePath + "\n";
-            output += new RfcVisitor().returnOutput(cu, null);
+
+            //output += new RfcVisitor().returnOutput(cu, null);
+
+            //String output = new CboVisitor().returnOutput(cu, null);
+
             outputsList.add(output);
         }
 
