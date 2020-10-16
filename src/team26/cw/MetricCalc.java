@@ -25,11 +25,9 @@ public class MetricCalc {
             }
         });
 
+        String MetricOutput[] = {"", "", "", ""};
         List<String> outputsList = new ArrayList<String>();
         for (String filePath: filesInDir){
-
-//            String filePath =  "rsrc/Test.java";
-//            String filePath =  "rsrc/VisitorDemo.java";
             File f = new File(filePath);
 
             FileInputStream fis = new FileInputStream(f);
@@ -42,38 +40,55 @@ public class MetricCalc {
 
             //Output of test that is stored in strings to be written to files
             // commented Wmc Visitor cos it runs but needs tweaking
-            //String output = "File: " + filePath + "\n";
+            String fileOut = "\nFile: " + filePath + "\n";
+            String metric = "";
 
-            //output += new RfcVisitor().returnOutput(cu, null);
+            metric = new WmcVisitor().returnOutput(cu, null);
+            MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
+            metric = new RfcVisitor().returnOutput(cu, null);
+            MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
+//            metric = new CboVisitor().returnOutput(cu, null);
+//            MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;
+//            metric = new LcomVisitor().returnOutput(cu, null);
+//            MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
 
-            ArrayList output = new CboVisitor().returnOutput(cu, null);
-
-            //System.out.println("Andy = " + new CboVisitor().getCboClassList().get(0));
-
-            for (Object s: output) {
-                System.out.println(s);
-            }
+//            ArrayList output = new CboVisitor().returnOutput(cu, null);
+//            //System.out.println("Andy = " + new CboVisitor().getCboClassList().get(0));
+//            for (Object s: output) {
+//                System.out.println(s);
+//            }
 
             
             //outputsList.add(output);
         }
-
-        //Sets format for output file names using Date and Time
-        String outputFilePath = "Test Outputs/";
+//Sets format for output file names using Date and Time
+        String outputFilePath = "";
         SimpleDateFormat  dateFormat = new SimpleDateFormat("'Date 'dd-MM-yyyy ' at ' HH_mm_ss");
         Date date = new Date(System.currentTimeMillis());
-        outputFilePath += dateFormat.format(date) +".txt";
 
-        //Creates and writes to those files- Commented out cos was sick of deleting new files after each run
-        Path file = Paths.get(outputFilePath);
-
-        //Either add it all to one string for writing to one file OR
-        //Different strings that output to separate files
-        String output = "";
-        for (String out: outputsList){
-            output+=out;
-            System.out.println(out);
+        for (int i = 0; i < 4; i ++){
+            outputFilePath = "Test Outputs/";
+            if(MetricOutput[i].isEmpty()){
+                continue;
+            }
+            switch (i){
+                case 0:
+                    outputFilePath += "WMC - " + dateFormat.format(date) +".txt";
+                    break;
+                case 1:
+                    outputFilePath += "RFC - " + dateFormat.format(date) +".txt";
+                    break;
+                case 2:
+                    outputFilePath += "CBO - " + dateFormat.format(date) +".txt";
+                    break;
+                case 3:
+                    outputFilePath += "LCOM - " + dateFormat.format(date) +".txt";
+                    break;
+            }
+            System.out.println(MetricOutput[i]);
+//
+            Path file = Paths.get(outputFilePath);
+            Files.write(file, MetricOutput[i].getBytes());
         }
-        Files.write(file, output.getBytes());
     }
 }
