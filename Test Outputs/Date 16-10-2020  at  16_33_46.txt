@@ -1,18 +1,13 @@
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
 Class Name: AnimalVarTypes: boolean
 VarTypes: Field
 VarTypes: Location
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
 Class Name: CounterVarTypes: String
 VarTypes: int
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
 Class Name: FieldVarTypes: Random
 VarTypes: int
 VarTypes: Object[][]
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
 Class Name: FieldStatsVarTypes: HashMap<Class,Counter>
 VarTypes: boolean
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
 Class Name: FoxVarTypes: int
 VarTypes: int
 VarTypes: double
@@ -21,7 +16,6 @@ VarTypes: int
 VarTypes: Random
 VarTypes: int
 VarTypes: int
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
 Class Name: GraphViewVarTypes: Color
 VarTypes: JFrame
 VarTypes: GraphPanel
@@ -34,7 +28,6 @@ Class Name: GraphPanelVarTypes: double
 VarTypes: BufferedImage
 VarTypes: int
 VarTypes: int
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
 Class Name: GridViewVarTypes: Color
 VarTypes: Color
 VarTypes: String
@@ -49,21 +42,17 @@ VarTypes: int
 VarTypes: Dimension
 VarTypes: Graphics
 VarTypes: Image
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
 Class Name: LocationVarTypes: int
 VarTypes: int
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
 Class Name: RabbitVarTypes: int
 VarTypes: int
 VarTypes: double
 VarTypes: int
 VarTypes: Random
 VarTypes: int
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
 Class Name: RandomizerVarTypes: int
 VarTypes: Random
 VarTypes: boolean
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
 Class Name: SimulatorVarTypes: int
 VarTypes: int
 VarTypes: double
@@ -72,15 +61,11 @@ VarTypes: List<Animal>
 VarTypes: Field
 VarTypes: int
 VarTypes: List<SimulatorView>
-File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
-Class Name: SimulatorViewFile: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
-Class Name: ActorFile: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
-Class Name: CityVarTypes: List<Item>
+Class Name: SimulatorViewClass Name: ActorClass Name: CityVarTypes: List<Item>
 VarTypes: int
 VarTypes: int
 VarTypes: int
 VarTypes: int
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
 Class Name: CityGUIVarTypes: int
 VarTypes: int
 VarTypes: City
@@ -91,60 +76,42 @@ VarTypes: int
 VarTypes: Dimension
 VarTypes: Graphics
 VarTypes: Image
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
-Class Name: DrawableItemFile: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
-Class Name: ItemFile: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
-Class Name: LocationVarTypes: int
+Class Name: DrawableItemClass Name: ItemClass Name: LocationVarTypes: int
 VarTypes: int
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
 Class Name: MissingPassengerExceptionVarTypes: Vehicle
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
 Class Name: PassengerVarTypes: Location
 VarTypes: Location
 VarTypes: Image
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
 Class Name: PassengerSourceVarTypes: City
 VarTypes: TaxiCompany
 VarTypes: Random
 VarTypes: double
 VarTypes: int
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
 Class Name: ShuttleVarTypes: List<Location>
 VarTypes: List<Passenger>
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
 Class Name: SimulationVarTypes: List<Actor>
 VarTypes: int
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
 Class Name: TaxiVarTypes: Passenger
 VarTypes: Image
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
 Class Name: TaxiCompanyVarTypes: List<Vehicle>
 VarTypes: City
 VarTypes: Map<Vehicle,Passenger>
 VarTypes: int
-File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
 Class Name: VehicleVarTypes: TaxiCompany
 VarTypes: Location
 VarTypes: Location
 VarTypes: int
-File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
 Class Name: LogAnalyzerVarTypes: int[]
 VarTypes: LogfileReader
-File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
 Class Name: LogEntryVarTypes: int[]
 VarTypes: Calendar
 VarTypes: int
 VarTypes: int
-File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
 Class Name: LogfileCreatorVarTypes: Random
-File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
 Class Name: LogfileReaderVarTypes: String
 VarTypes: ArrayList<LogEntry>
 VarTypes: Iterator<LogEntry>
-File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
-Class Name: LoglineTokenizerFile: rsrc\Test.java
-Class Name: exampleFile: rsrc\VisitorDemo.java
-Class Name: CarElementClass Name: CarElementVisitorClass Name: WheelVarTypes: String
+Class Name: LoglineTokenizerClass Name: exampleClass Name: CarElementClass Name: CarElementVisitorClass Name: WheelVarTypes: String
 VarTypes: float
 Class Name: BodyVarTypes: String
 Class Name: EngineVarTypes: String

@@ -42,13 +42,20 @@ public class MetricCalc {
 
             //Output of test that is stored in strings to be written to files
             // commented Wmc Visitor cos it runs but needs tweaking
-            String output = "File: " + filePath + "\n";
+            //String output = "File: " + filePath + "\n";
 
             //output += new RfcVisitor().returnOutput(cu, null);
 
-            //String output = new CboVisitor().returnOutput(cu, null);
+            ArrayList output = new CboVisitor().returnOutput(cu, null);
 
-            outputsList.add(output);
+            //System.out.println("Andy = " + new CboVisitor().getCboClassList().get(0));
+
+            for (Object s: output) {
+                System.out.println(s);
+            }
+
+            
+            //outputsList.add(output);
         }
 
         //Sets format for output file names using Date and Time

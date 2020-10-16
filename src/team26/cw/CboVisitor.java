@@ -20,7 +20,7 @@ public class CboVisitor extends VoidVisitorAdapter {
     ArrayList<String> classList = new ArrayList<>();
     ArrayList<ArrayList> listOfVarTypes = new ArrayList<>();
 
-    public String returnOutput(CompilationUnit cu, Object arg){
+    public ArrayList<String> returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
         //returnString += " - Number of Classes Coupled: " + num + "\n";
        /* for (String c: classList) {
@@ -39,22 +39,22 @@ public class CboVisitor extends VoidVisitorAdapter {
             num = 0;
         }*/
 
-        for (int i = 0; i <=classList.size(); i++)
+       /* for (int i = 0; i <=classList.size(); i++)
         {
-            /*for (int j = 0; j <= listOfVarTypes.size(); j++)
+            for (int j = 0; j <= listOfVarTypes.size(); j++)
             {
                 if(listOfVarTypes.get(j).get(j).equals(i))
                 {
                     num++;
-                    returnString += "j: " + listOfVarTypes.get(j).get(j).toString() + "\n";
+                    returnString += "i: " + listOfVarTypes.get(j).get(j).toString() + "\n";
                     returnString += "j: " + classList.get(i) + "\n";
                     returnString += "Score: " + num + "\n";
                 }
-            }*/
+            }
             num =0;
-        }
+        }*/
 
-        return returnString;
+        return classList;
     }
 
 
@@ -62,11 +62,11 @@ public class CboVisitor extends VoidVisitorAdapter {
       public void visit(ClassOrInterfaceDeclaration n, Object arg){
         classList.add(n.getNameAsString());
         ArrayList<String> typeList = new ArrayList<>();
-        //returnString += "Class Name: " + n.getNameAsString();
+        returnString += "Class Name: " + n.getNameAsString();
           for(FieldDeclaration fieldDec:n.getFields())
           {
               typeList.add(fieldDec.getVariable(0).getTypeAsString());
-              //returnString +="VarTypes: " + fieldDec.getVariable(0).getTypeAsString() + "\n";
+              returnString +="VarTypes: " + fieldDec.getVariable(0).getTypeAsString() + "\n";
           }
           listOfVarTypes.add(typeList);
         //returnString +="TP: " + n.get;
@@ -78,6 +78,17 @@ public class CboVisitor extends VoidVisitorAdapter {
     {
         //num++;
         super.visit(n, arg);
+    }
+
+    public ArrayList getCboClassList()
+    {
+        return classList;
+
+    }
+
+    public ArrayList getCboTypeList()
+    {
+        return listOfVarTypes;
     }
 
 }
