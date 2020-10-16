@@ -7,6 +7,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
       Method Name: getLocation - Simple Complexity: 1
       Method Name: setLocation - Simple Complexity: 2
       Method Name: getField - Simple Complexity: 1
+   Sum of Class: 8
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
    Class: Counter - Number of Methods: 4
@@ -14,6 +15,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
       Method Name: getCount - Simple Complexity: 1
       Method Name: increment - Simple Complexity: 1
       Method Name: reset - Simple Complexity: 1
+   Sum of Class: 4
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
    Class: Field - Number of Methods: 12
@@ -29,6 +31,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
       Method Name: adjacentLocations - Simple Complexity: 10
       Method Name: getDepth - Simple Complexity: 1
       Method Name: getWidth - Simple Complexity: 1
+   Sum of Class: 26
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
    Class: FieldStats - Number of Methods: 7
@@ -39,6 +42,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
       Method Name: countFinished - Simple Complexity: 1
       Method Name: isViable - Simple Complexity: 4
       Method Name: generateCounts - Simple Complexity: 4
+   Sum of Class: 18
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
    Class: Fox - Number of Methods: 7
@@ -49,6 +53,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
       Method Name: giveBirth - Simple Complexity: 2
       Method Name: breed - Simple Complexity: 3
       Method Name: canBreed - Simple Complexity: 1
+   Sum of Class: 18
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
    Class: GraphView - Number of Methods: 5
@@ -57,6 +62,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
       Method Name: isViable - Simple Complexity: 1
       Method Name: reset - Simple Complexity: 1
       Method Name: makeFrame - Simple Complexity: 1
+   Sum of Class: 5
    Class: GraphPanel - Number of Methods: 7
       Method Name: newRun - Simple Complexity: 1
       Method Name: update - Simple Complexity: 4
@@ -65,6 +71,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
       Method Name: getPreferredSize - Simple Complexity: 1
       Method Name: isOpaque - Simple Complexity: 1
       Method Name: paintComponent - Simple Complexity: 2
+   Sum of Class: 11
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
    Class: GridView - Number of Methods: 5
@@ -73,11 +80,13 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
       Method Name: showStatus - Simple Complexity: 5
       Method Name: isViable - Simple Complexity: 1
       Method Name: reset - Simple Complexity: 1
+   Sum of Class: 10
    Class: FieldView - Number of Methods: 4
       Method Name: getPreferredSize - Simple Complexity: 1
       Method Name: preparePaint - Simple Complexity: 4
       Method Name: drawMark - Simple Complexity: 1
       Method Name: paintComponent - Simple Complexity: 3
+   Sum of Class: 9
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
    Class: Location - Number of Methods: 5
@@ -86,6 +95,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
       Method Name: hashCode - Simple Complexity: 1
       Method Name: getRow - Simple Complexity: 1
       Method Name: getCol - Simple Complexity: 1
+   Sum of Class: 6
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
    Class: Rabbit - Number of Methods: 5
@@ -94,11 +104,13 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
       Method Name: giveBirth - Simple Complexity: 2
       Method Name: breed - Simple Complexity: 3
       Method Name: canBreed - Simple Complexity: 1
+   Sum of Class: 11
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
    Class: Randomizer - Number of Methods: 2
       Method Name: getRandom - Simple Complexity: 2
       Method Name: reset - Simple Complexity: 2
+   Sum of Class: 4
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
    Class: Simulator - Number of Methods: 7
@@ -109,6 +121,7 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
       Method Name: updateViews - Simple Complexity: 2
       Method Name: populate - Simple Complexity: 5
       Method Name: delay - Simple Complexity: 1
+   Sum of Class: 16
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
    Class: SimulatorView - Number of Methods: 4
@@ -116,10 +129,12 @@ File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
       Method Name: isViable - Simple Complexity: 1
       Method Name: showStatus - Simple Complexity: 1
       Method Name: reset - Simple Complexity: 1
+   Sum of Class: 4
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
    Class: Actor - Number of Methods: 1
       Method Name: act - Simple Complexity: 1
+   Sum of Class: 1
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
    Class: City - Number of Methods: 6
@@ -129,23 +144,28 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
       Method Name: toString - Simple Complexity: 1
       Method Name: getWidth - Simple Complexity: 1
       Method Name: getHeight - Simple Complexity: 1
+   Sum of Class: 8
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
    Class: CityGUI - Number of Methods: 1
       Method Name: act - Simple Complexity: 3
+   Sum of Class: 3
    Class: CityView - Number of Methods: 4
       Method Name: getPreferredSize - Simple Complexity: 1
       Method Name: preparePaint - Simple Complexity: 6
       Method Name: drawImage - Simple Complexity: 1
       Method Name: paintComponent - Simple Complexity: 3
+   Sum of Class: 11
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
    Class: DrawableItem - Number of Methods: 1
       Method Name: getImage - Simple Complexity: 1
+   Sum of Class: 1
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
    Class: Item - Number of Methods: 1
       Method Name: getLocation - Simple Complexity: 1
+   Sum of Class: 1
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
    Class: Location - Number of Methods: 7
@@ -156,10 +176,12 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
       Method Name: hashCode - Simple Complexity: 1
       Method Name: getX - Simple Complexity: 1
       Method Name: getY - Simple Complexity: 1
+   Sum of Class: 10
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
    Class: MissingPassengerException - Number of Methods: 1
       Method Name: getVehicle - Simple Complexity: 1
+   Sum of Class: 1
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
    Class: Passenger - Number of Methods: 5
@@ -168,12 +190,14 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
       Method Name: getLocation - Simple Complexity: 1
       Method Name: getPickupLocation - Simple Complexity: 1
       Method Name: getDestination - Simple Complexity: 1
+   Sum of Class: 5
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
    Class: PassengerSource - Number of Methods: 3
       Method Name: act - Simple Complexity: 3
       Method Name: getMissedPickups - Simple Complexity: 1
       Method Name: createPassenger - Simple Complexity: 2
+   Sum of Class: 6
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
    Class: Shuttle - Number of Methods: 6
@@ -183,12 +207,14 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
       Method Name: pickup - Simple Complexity: 1
       Method Name: chooseTargetLocation - Simple Complexity: 1
       Method Name: offloadPassenger - Simple Complexity: 1
+   Sum of Class: 6
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
    Class: Simulation - Number of Methods: 3
       Method Name: run - Simple Complexity: 2
       Method Name: step - Simple Complexity: 2
       Method Name: wait - Simple Complexity: 1
+   Sum of Class: 5
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
    Class: Taxi - Number of Methods: 7
@@ -199,6 +225,7 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
       Method Name: offloadPassenger - Simple Complexity: 1
       Method Name: getImage - Simple Complexity: 2
       Method Name: toString - Simple Complexity: 1
+   Sum of Class: 11
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
    Class: TaxiCompany - Number of Methods: 6
@@ -208,6 +235,7 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
       Method Name: getVehicles - Simple Complexity: 1
       Method Name: scheduleVehicle - Simple Complexity: 3
       Method Name: setupVehicles - Simple Complexity: 2
+   Sum of Class: 11
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
    Class: Vehicle - Number of Methods: 13
@@ -224,12 +252,14 @@ File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
       Method Name: clearTargetLocation - Simple Complexity: 1
       Method Name: getIdleCount - Simple Complexity: 1
       Method Name: incrementIdleCount - Simple Complexity: 1
+   Sum of Class: 15
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
    Class: LogAnalyzer - Number of Methods: 3
       Method Name: analyzeHourlyData - Simple Complexity: 2
       Method Name: printHourlyCounts - Simple Complexity: 2
       Method Name: printData - Simple Complexity: 1
+   Sum of Class: 5
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
    Class: LogEntry - Number of Methods: 6
@@ -239,11 +269,13 @@ File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
       Method Name: compareTo - Simple Complexity: 1
       Method Name: getWhen - Simple Complexity: 1
       Method Name: setWhen - Simple Complexity: 1
+   Sum of Class: 8
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
    Class: LogfileCreator - Number of Methods: 2
       Method Name: createFile - Simple Complexity: 4
       Method Name: createEntry - Simple Complexity: 1
+   Sum of Class: 5
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
    Class: LogfileReader - Number of Methods: 7
@@ -254,10 +286,12 @@ File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
       Method Name: reset - Simple Complexity: 1
       Method Name: printData - Simple Complexity: 2
       Method Name: createSimulatedData - Simple Complexity: 2
+   Sum of Class: 9
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
    Class: LoglineTokenizer - Number of Methods: 1
       Method Name: tokenize - Simple Complexity: 2
+   Sum of Class: 2
 
 File: rsrc\Test.java
    Class: example - Number of Methods: 4
@@ -265,47 +299,59 @@ File: rsrc\Test.java
       Method Name: CheckBody - Simple Complexity: 1
       Method Name: CheckSwitch - Simple Complexity: 4
       Method Name: CheckLoops - Simple Complexity: 8
+   Sum of Class: 18
 
 File: rsrc\VisitorDemo.java
    Class: CarElement - Number of Methods: 1
       Method Name: accept - Simple Complexity: 1
+   Sum of Class: 1
    Class: CarElementVisitor - Number of Methods: 4
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
+   Sum of Class: 4
    Class: Wheel - Number of Methods: 3
       Method Name: getName - Simple Complexity: 1
       Method Name: getTyrePressure - Simple Complexity: 1
       Method Name: accept - Simple Complexity: 1
+   Sum of Class: 3
    Class: Body - Number of Methods: 2
       Method Name: accept - Simple Complexity: 1
       Method Name: getBodyType - Simple Complexity: 1
+   Sum of Class: 2
    Class: Engine - Number of Methods: 3
       Method Name: accept - Simple Complexity: 1
       Method Name: getOilLevel - Simple Complexity: 1
       Method Name: getEngineLevelSize - Simple Complexity: 1
+   Sum of Class: 3
    Class: Car - Number of Methods: 1
       Method Name: accept - Simple Complexity: 2
+   Sum of Class: 2
    Class: CarElementDoVisitor - Number of Methods: 4
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
+   Sum of Class: 4
    Class: CarElementPrintVisitor - Number of Methods: 4
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
+   Sum of Class: 4
    Class: SalesVisitor - Number of Methods: 4
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
+   Sum of Class: 4
    Class: MechanicVisitor - Number of Methods: 4
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
       Method Name: visit - Simple Complexity: 1
+   Sum of Class: 4
    Class: VisitorDemo - Number of Methods: 1
       Method Name: main - Simple Complexity: 3
+   Sum of Class: 3

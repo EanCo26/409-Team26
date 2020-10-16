@@ -86,7 +86,7 @@ public class MetricCalc {
                     break;
             }
             System.out.println(MetricOutput[i]);
-//
+
             Path file = Paths.get(outputFilePath);
             Files.write(file, MetricOutput[i].getBytes());
         }

@@ -49,11 +49,14 @@ public class WmcVisitor extends VoidVisitorAdapter {
     }
 
     public void recordMethodsInClass(){
+        int sumComplex = 0;
         if(!lMD.isEmpty()){
             for (MethodDetails details: lMD) {
                 returnString += "      Method Name: " + details.getMethodName()
                         + " - Simple Complexity: " + details.getMethodDecisions() + "\n";
+                sumComplex += details.getMethodDecisions();
             }
+            returnString += "   Sum of Class: " + sumComplex + "\n";
             lMD.clear();
         }
     }
