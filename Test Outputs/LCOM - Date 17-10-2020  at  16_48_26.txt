@@ -1,0 +1,112 @@
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
+   Class: Animal - Number of Methods: 6
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
+   Class: Counter - Number of Methods: 4
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
+   Class: Field - Number of Methods: 12
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
+   Class: FieldStats - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
+   Class: Fox - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
+   Class: GraphView - Number of Methods: 5
+   Class: GraphPanel - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
+   Class: GridView - Number of Methods: 5
+   Class: FieldView - Number of Methods: 4
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
+   Class: Location - Number of Methods: 5
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
+   Class: Rabbit - Number of Methods: 5
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
+   Class: Randomizer - Number of Methods: 2
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
+   Class: Simulator - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
+   Class: SimulatorView - Number of Methods: 4
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
+   Class: Actor - Number of Methods: 1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
+   Class: City - Number of Methods: 6
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
+   Class: CityGUI - Number of Methods: 1
+   Class: CityView - Number of Methods: 4
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
+   Class: DrawableItem - Number of Methods: 1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
+   Class: Item - Number of Methods: 1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
+   Class: Location - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
+   Class: MissingPassengerException - Number of Methods: 1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
+   Class: Passenger - Number of Methods: 5
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
+   Class: PassengerSource - Number of Methods: 3
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
+   Class: Shuttle - Number of Methods: 6
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
+   Class: Simulation - Number of Methods: 3
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
+   Class: Taxi - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
+   Class: TaxiCompany - Number of Methods: 6
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
+   Class: Vehicle - Number of Methods: 13
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
+   Class: LogAnalyzer - Number of Methods: 3
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
+   Class: LogEntry - Number of Methods: 6
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
+   Class: LogfileCreator - Number of Methods: 2
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
+   Class: LogfileReader - Number of Methods: 7
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
+   Class: LoglineTokenizer - Number of Methods: 1
+
+File: rsrc\Test.java
+   Class: example - Number of Methods: 4
+
+File: rsrc\VisitorDemo.java
+   Class: CarElement - Number of Methods: 1
+   Class: CarElementVisitor - Number of Methods: 4
+   Class: Wheel - Number of Methods: 3
+   Class: Body - Number of Methods: 2
+   Class: Engine - Number of Methods: 3
+   Class: Car - Number of Methods: 1
+   Class: CarElementDoVisitor - Number of Methods: 4
+   Class: CarElementPrintVisitor - Number of Methods: 4
+   Class: SalesVisitor - Number of Methods: 4
+   Class: MechanicVisitor - Number of Methods: 4
+   Class: VisitorDemo - Number of Methods: 1

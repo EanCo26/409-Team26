@@ -42,14 +42,14 @@ public class MetricCalc {
             String fileOut = "\nFile: " + filePath + "\n";
             String metric = "";
 
-            metric = new WmcVisitor().returnOutput(cu, null);
+            /*metric = new WmcVisitor().returnOutput(cu, null);
             MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
             metric = new RfcVisitor().returnOutput(cu, null);
-            MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
+            MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;*/
 //            metric = new CboVisitor().returnOutput(cu, null);
 //            MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;
-//            metric = new LcomVisitor().returnOutput(cu, null);
-//            MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
+            metric = new LconVisitor().returnOutput(cu, null);
+            MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
 
 //            ArrayList output = new CboVisitor().returnOutput(cu, null);
 //            //System.out.println("Andy = " + new CboVisitor().getCboClassList().get(0));

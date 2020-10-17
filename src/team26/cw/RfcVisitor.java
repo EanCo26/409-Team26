@@ -27,21 +27,9 @@ public class RfcVisitor extends VoidVisitorAdapter {
 
     public String returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
-        //recordMethodsInClass();
-        //returnString += " - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +   "\n";
         return returnString;
     }
 
-   /* public int numberOfMethods()
-    {
-        if(!lMD.isEmpty()){
-            for (MethodDetails details: lMD) {
-                returnString += "      Method Name: " + details.getMethodName()
-                        + " - Simple Complexity: " + details.getMethodDecisions() + "\n";
-            }
-            lMD.clear();
-        }
-    }*/
 
     public void visit(ClassOrInterfaceDeclaration n, Object arg){
         methodSize = n.getMethods().size();
@@ -58,42 +46,14 @@ public class RfcVisitor extends VoidVisitorAdapter {
                     " - RFC Value: " + (num + methodSize) + "\n";
         }
 
-        /*returnString += "Class Name: " + n.getName()
-                + " - Number of Methods: " + methodSize;*/
 
-        //System.out.println("Class Implements: ");
-        // check for nothing implemented
-        /*if(n.getImplementedTypes().isNonEmpty()) {
-            for (ClassOrInterfaceType coi : n.getImplementedTypes()) {
-                System.out.println(coi.getName());
-            }
-        }
-        System.out.println("Class Extends: ");
-        // check for nothing inherited
-        if(n.getExtendedTypes().isNonEmpty()) {
-            for (ClassOrInterfaceType coi : n.getExtendedTypes()) {
-                System.out.println(coi.getName());
-            }
-        }*/
         super.visit(n, arg);
     }
 
     public void visit(MethodCallExpr n, Object arg)
     {
-        //returnString += "\n - Method Called: "  + n.getc(); //Need to get number of method calls here its going to each individually
-        //if(n.)
         num++;
         super.visit(n, arg);
     }
 
-    /*public void visit(MethodDeclaration n, Object arg) {
-        System.out.println("Method name: " + n.getName());
-        System.out.println("Method type: " + n.getType());
-        num++;
-        returnString = String.valueOf(num);
-        //       	System.out.println("Method modifier: " + n.getModifiers() + " " + decodeModifiers(n.getModifiers()));
-
-        // Find local variables in method body
-        //n.getBody().ifPresent(l -> l.accept(new LocalVarVisitor(), arg));
-    }*/
 }
