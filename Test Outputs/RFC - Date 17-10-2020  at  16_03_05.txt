@@ -1,0 +1,145 @@
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
+
+Class Name: Animal - Number of Methods: 6 - Number of Methods Called: 3
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
+
+Class Name: Counter - Number of Methods: 4 - Number of Methods Called: -1
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
+
+Class Name: Field - Number of Methods: 12 - Number of Methods Called: 20
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
+
+Class Name: FieldStats - Number of Methods: 7 - Number of Methods Called: 29
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
+
+Class Name: Fox - Number of Methods: 7 - Number of Methods Called: 33
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
+
+Class Name: GraphView - Number of Methods: 5
+Class Name: GraphPanel - Number of Methods: 7 - Number of Methods Called: 72
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
+
+Class Name: GridView - Number of Methods: 5
+Class Name: FieldView - Number of Methods: 4 - Number of Methods Called: 39
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
+
+Class Name: Location - Number of Methods: 5 - Number of Methods Called: 1
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
+
+Class Name: Rabbit - Number of Methods: 5 - Number of Methods Called: 20
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
+
+Class Name: Randomizer - Number of Methods: 2 - Number of Methods Called: 0
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
+
+Class Name: Simulator - Number of Methods: 7 - Number of Methods Called: 34
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
+
+Class Name: SimulatorView - Number of Methods: 4 - Number of Methods Called: -1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
+
+Class Name: Actor - Number of Methods: 1 - Number of Methods Called: -1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
+
+Class Name: City - Number of Methods: 6 - Number of Methods Called: 3
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
+
+Class Name: CityGUI - Number of Methods: 1
+Class Name: CityView - Number of Methods: 4 - Number of Methods Called: 34
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
+
+Class Name: DrawableItem - Number of Methods: 1 - Number of Methods Called: -1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
+
+Class Name: Item - Number of Methods: 1 - Number of Methods Called: -1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
+
+Class Name: Location - Number of Methods: 7 - Number of Methods Called: 8
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
+
+Class Name: MissingPassengerException - Number of Methods: 1 - Number of Methods Called: -1
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
+
+Class Name: Passenger - Number of Methods: 5 - Number of Methods Called: 2
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
+
+Class Name: PassengerSource - Number of Methods: 3 - Number of Methods Called: 10
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
+
+Class Name: Shuttle - Number of Methods: 6 - Number of Methods Called: 5
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
+
+Class Name: Simulation - Number of Methods: 3 - Number of Methods Called: 7
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
+
+Class Name: Taxi - Number of Methods: 7 - Number of Methods Called: 20
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
+
+Class Name: TaxiCompany - Number of Methods: 6 - Number of Methods Called: 17
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
+
+Class Name: Vehicle - Number of Methods: 13 - Number of Methods Called: 1
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
+
+Class Name: LogAnalyzer - Number of Methods: 3 - Number of Methods Called: 5
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
+
+Class Name: LogEntry - Number of Methods: 6 - Number of Methods Called: 11
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
+
+Class Name: LogfileCreator - Number of Methods: 2 - Number of Methods Called: 9
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
+
+Class Name: LogfileReader - Number of Methods: 7 - Number of Methods Called: 20
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
+
+Class Name: LoglineTokenizer - Number of Methods: 1 - Number of Methods Called: 1
+
+File: rsrc\Test.java
+
+Class Name: example - Number of Methods: 4 - Number of Methods Called: -1
+
+File: rsrc\VisitorDemo.java
+
+Class Name: CarElement - Number of Methods: 1
+Class Name: CarElementVisitor - Number of Methods: 4
+Class Name: Wheel - Number of Methods: 3 - Number of Methods Called: 0 - RFC Value: 2
+Class Name: Body - Number of Methods: 2
+Class Name: Engine - Number of Methods: 3
+Class Name: Car - Number of Methods: 1
+Class Name: CarElementDoVisitor - Number of Methods: 4
+Class Name: CarElementPrintVisitor - Number of Methods: 4
+Class Name: SalesVisitor - Number of Methods: 4
+Class Name: MechanicVisitor - Number of Methods: 4
+Class Name: VisitorDemo - Number of Methods: 1 - Number of Methods Called: 27

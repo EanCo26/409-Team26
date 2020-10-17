@@ -56,7 +56,7 @@ public class WmcVisitor extends VoidVisitorAdapter {
                         + " - Simple Complexity: " + details.getMethodDecisions() + "\n";
                 sumComplex += details.getMethodDecisions();
             }
-            returnString += "   Sum of Class: " + sumComplex + "\n";
+            returnString += "   Sum of Class Complexity: " + sumComplex + "\n";
             lMD.clear();
         }
     }

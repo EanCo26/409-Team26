@@ -22,12 +22,13 @@ public class RfcVisitor extends VoidVisitorAdapter {
 
     String returnString = "";
    // private List<MethodDetails> lMD = new ArrayList<MethodDetails>();
-    private int num = -1;
+    private int num = 0;
+    private int methodSize = 0;
 
     public String returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
         //recordMethodsInClass();
-        returnString += " - Number of Methods Called: " + num + "\n";
+        //returnString += " - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +   "\n";
         return returnString;
     }
 
@@ -43,18 +44,22 @@ public class RfcVisitor extends VoidVisitorAdapter {
     }*/
 
     public void visit(ClassOrInterfaceDeclaration n, Object arg){
-
-        if(num == 0)
+        methodSize = n.getMethods().size();
+        if(num != 0)
         {
-            returnString += " - Number of Methods Called: " + num + "\n";
+            returnString += "Class Name: " + n.getName()
+                    + " - Number of Methods: " + methodSize +
+                    " - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +  "\n";
             num = 0;
         }
         else {
-            returnString += "\n";
+            returnString +=  "Class Name: " + n.getName()
+                    + " - Number of Methods: " + methodSize +
+                    " - RFC Value: " + (num + methodSize) + "\n";
         }
 
-        returnString += "Class Name: " + n.getName()
-                + " - Number of Methods: " + n.getMethods().size();
+        /*returnString += "Class Name: " + n.getName()
+                + " - Number of Methods: " + methodSize;*/
 
         //System.out.println("Class Implements: ");
         // check for nothing implemented
