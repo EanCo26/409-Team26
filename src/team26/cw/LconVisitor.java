@@ -16,11 +16,9 @@ public class LconVisitor extends VoidVisitorAdapter {
     private List<FieldDeclaration> fdList = new ArrayList<FieldDeclaration>();
     private List<MethodDeclaration> mdList = new ArrayList<MethodDeclaration>();
     int possiblePairs = 0;
-    String statementStringI = "";
-    String statementStringJ = "";
+    String statementI = "";
+    String statementJ = "";
     int newCounter = 0;
-
-
 
     public String returnOutput(CompilationUnit cu, Object arg) {
         cu.accept(this, arg);
@@ -37,65 +35,42 @@ public class LconVisitor extends VoidVisitorAdapter {
         mdList = cid.getMethods();
         newCounter = 0;
 
-        //System.out.println(mdList.size());
-//        for (MethodDeclaration methodDec : mdList) {
-//            statementString = "";
-//            possiblePairs += counter;
-//            counter++;
-//
-//            methodDec.getBody().ifPresent(blockStmt -> {
-//                BlockStmt bStmt = methodDec.getBody().get();
-//                for (Statement stmt:bStmt.getStatements()) {
-//                    statementString += stmt.toString();
-//                    //System.out.println(tempString);
-//                }
-//            });
-//            for (FieldDeclaration fieldDec : fdList) {
-//                for (VariableDeclarator varDec : fieldDec.getVariables()) {
-//                    System.out.println((varDec.getNameAsString()));
-//                    if (statementString.contains(varDec.getNameAsString())) {
-//                        newCounter++;
-//                    }
-//                }
-////                    bStmt.getStatement().
-//            }
-//            //System.out.println(counter);
-//        }
-
+        List<String> fieldVariables = new ArrayList<>();
         for (FieldDeclaration fieldDec:fdList) {
             for (VariableDeclarator varDec : fieldDec.getVariables()) {
-//                for (MethodDeclaration methodDec : mdList) {
-                for(int i = 0; i < mdList.size(); i++){
-                    for(int j = i; j < mdList.size(); j++) {
-                        if(i==j){
-                            continue;
+                fieldVariables.add(varDec.getNameAsString());
+            }
+        }
+
+        for (String fieldVar:fieldVariables) {
+            for(int i = 0; i < mdList.size(); i++){
+                for(int j = i; j < mdList.size(); j++) {
+                    if(i==j){
+                        continue;
+                    }
+
+                    statementI = "";
+                    statementJ = "";
+
+                    MethodDeclaration methodDeclarationI = mdList.get(i);
+                    methodDeclarationI.getBody().ifPresent(blockStmt -> {
+                        BlockStmt bStmt = methodDeclarationI.getBody().get();
+                        for (Statement stmt : bStmt.getStatements()) {
+                            statementI += stmt.toString();
                         }
-                        statementStringI = "";
-                        statementStringJ = "";
-//                        possiblePairs += counter;
-//                        counter++;
-                        MethodDeclaration methodDeclarationI = mdList.get(i);
-                        methodDeclarationI.getBody().ifPresent(blockStmt -> {
-                            BlockStmt bStmt = methodDeclarationI.getBody().get();
-                            for (Statement stmt : bStmt.getStatements()) {
-                                statementStringI += stmt.toString();
-                                //System.out.println(tempString);
-                            }
-                        });
-                        MethodDeclaration methodDeclarationJ = mdList.get(j);
-                        methodDeclarationJ.getBody().ifPresent(blockStmt -> {
-                            BlockStmt bStmt = methodDeclarationJ.getBody().get();
-                            for (Statement stmt : bStmt.getStatements()) {
-                                statementStringJ += stmt.toString();
-                                //System.out.println(tempString);
-                            }
-                        });
-                        //System.out.println(statementString);
-                        if (statementStringI.contains(varDec.getNameAsString())) {
-//                            System.out.println((varDec.getNameAsString()));
-                            if(statementStringJ.contains(varDec.getNameAsString())) {
-                                newCounter++;
-                            }
+                    });
+
+                    MethodDeclaration methodDeclarationJ = mdList.get(j);
+                    methodDeclarationJ.getBody().ifPresent(blockStmt -> {
+                        BlockStmt bStmt = methodDeclarationJ.getBody().get();
+                        for (Statement stmt : bStmt.getStatements()) {
+                            statementJ += stmt.toString();
+                        }
+                    });
+
+                    if (statementJ.contains(fieldVar)) {
+                        if(statementJ.contains(fieldVar)) {
+                            newCounter++;
                         }
                     }
                 }
@@ -103,18 +78,5 @@ public class LconVisitor extends VoidVisitorAdapter {
         }
         super.visit(cid, arg);
     }
-
-    @Override
-    public void visit(MethodDeclaration md, Object arg)
-    {
-
-    }
-
-    @Override
-    public void visit(FieldDeclaration fd, Object arg)
-    {
-
-    }
-
 }
 
