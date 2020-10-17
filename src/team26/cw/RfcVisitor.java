@@ -22,7 +22,7 @@ public class RfcVisitor extends VoidVisitorAdapter {
 
     String returnString = "";
    // private List<MethodDetails> lMD = new ArrayList<MethodDetails>();
-    private int num = 0;
+    private int num = -1;
 
     public String returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
@@ -43,11 +43,22 @@ public class RfcVisitor extends VoidVisitorAdapter {
     }*/
 
     public void visit(ClassOrInterfaceDeclaration n, Object arg){
+
+        if(num == 0)
+        {
+            returnString += " - Number of Methods Called: " + num + "\n";
+            num = 0;
+        }
+        else {
+            returnString += "\n";
+        }
+
         returnString += "Class Name: " + n.getName()
                 + " - Number of Methods: " + n.getMethods().size();
-        /*System.out.println("Class Implements: ");
+
+        //System.out.println("Class Implements: ");
         // check for nothing implemented
-        if(n.getImplementedTypes().isNonEmpty()) {
+        /*if(n.getImplementedTypes().isNonEmpty()) {
             for (ClassOrInterfaceType coi : n.getImplementedTypes()) {
                 System.out.println(coi.getName());
             }
@@ -64,7 +75,8 @@ public class RfcVisitor extends VoidVisitorAdapter {
 
     public void visit(MethodCallExpr n, Object arg)
     {
-        //returnString += "\n - Method Called: "  + n.getNameAsString(); //Need to get number of method calls here its going to each individually
+        //returnString += "\n - Method Called: "  + n.getc(); //Need to get number of method calls here its going to each individually
+        //if(n.)
         num++;
         super.visit(n, arg);
     }

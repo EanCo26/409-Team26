@@ -26,7 +26,6 @@ public class MetricCalc {
         });
 
         String MetricOutput[] = {"", "", "", ""};
-        List<String> outputsList = new ArrayList<String>();
         for (String filePath: filesInDir){
             File f = new File(filePath);
 
@@ -59,7 +58,6 @@ public class MetricCalc {
 //            }
 
             
-            //outputsList.add(output);
         }
 //Sets format for output file names using Date and Time
         String outputFilePath = "";
