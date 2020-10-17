@@ -19,10 +19,12 @@ public class LconVisitor extends VoidVisitorAdapter {
     String statementI = "";
     String statementJ = "";
     int newCounter = 0;
+    int lconMetric = 0;
+
 
     public String returnOutput(CompilationUnit cu, Object arg) {
         cu.accept(this, arg);
-        System.out.println("  " + newCounter);
+        //System.out.println("Lcom metric - " + lconMetric);
         return returnString;
     }
 
@@ -39,6 +41,11 @@ public class LconVisitor extends VoidVisitorAdapter {
             for (VariableDeclarator varDec : fieldDec.getVariables()) {
                 fieldVariables.add(varDec.getNameAsString());
             }
+        }
+
+        for (MethodDeclaration methodDec : mdList) {
+            possiblePairs += counter;
+            counter++;
         }
 
         HashSet<String> Pair = new HashSet<>();
@@ -77,7 +84,9 @@ public class LconVisitor extends VoidVisitorAdapter {
                 }
             }
         }
-        newCounter += Pair.size();
+        newCounter = Pair.size();
+        lconMetric = counter - newCounter;
+        returnString += "Lcom metric - " + lconMetric + "\n";
         super.visit(cid, arg);
     }
 }

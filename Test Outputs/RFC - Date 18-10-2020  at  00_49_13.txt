@@ -1,0 +1,479 @@
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
+Class Name: Animal - Number of Methods: 6 - Number of Methods Called: 0 - RFC Value: 6
+ - Number of Methods Called: 1 - RFC Value: 7
+ - Number of Methods Called: 2 - RFC Value: 8
+ - Number of Methods Called: 3 - RFC Value: 9
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
+Class Name: Counter - Number of Methods: 4
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
+Class Name: Field - Number of Methods: 12 - Number of Methods Called: 0 - RFC Value: 12
+ - Number of Methods Called: 1 - RFC Value: 13
+ - Number of Methods Called: 2 - RFC Value: 14
+ - Number of Methods Called: 3 - RFC Value: 15
+ - Number of Methods Called: 4 - RFC Value: 16
+ - Number of Methods Called: 5 - RFC Value: 17
+ - Number of Methods Called: 6 - RFC Value: 18
+ - Number of Methods Called: 7 - RFC Value: 19
+ - Number of Methods Called: 8 - RFC Value: 20
+ - Number of Methods Called: 9 - RFC Value: 21
+ - Number of Methods Called: 10 - RFC Value: 22
+ - Number of Methods Called: 11 - RFC Value: 23
+ - Number of Methods Called: 13 - RFC Value: 25
+ - Number of Methods Called: 14 - RFC Value: 26
+ - Number of Methods Called: 15 - RFC Value: 27
+ - Number of Methods Called: 16 - RFC Value: 28
+ - Number of Methods Called: 17 - RFC Value: 29
+ - Number of Methods Called: 18 - RFC Value: 30
+ - Number of Methods Called: 19 - RFC Value: 31
+ - Number of Methods Called: 20 - RFC Value: 32
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
+Class Name: FieldStats - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 4 - RFC Value: 11
+ - Number of Methods Called: 5 - RFC Value: 12
+ - Number of Methods Called: 6 - RFC Value: 13
+ - Number of Methods Called: 7 - RFC Value: 14
+ - Number of Methods Called: 8 - RFC Value: 15
+ - Number of Methods Called: 9 - RFC Value: 16
+ - Number of Methods Called: 10 - RFC Value: 17
+ - Number of Methods Called: 11 - RFC Value: 18
+ - Number of Methods Called: 12 - RFC Value: 19
+ - Number of Methods Called: 13 - RFC Value: 20
+ - Number of Methods Called: 14 - RFC Value: 21
+ - Number of Methods Called: 15 - RFC Value: 22
+ - Number of Methods Called: 16 - RFC Value: 23
+ - Number of Methods Called: 17 - RFC Value: 24
+ - Number of Methods Called: 18 - RFC Value: 25
+ - Number of Methods Called: 19 - RFC Value: 26
+ - Number of Methods Called: 20 - RFC Value: 27
+ - Number of Methods Called: 21 - RFC Value: 28
+ - Number of Methods Called: 22 - RFC Value: 29
+ - Number of Methods Called: 23 - RFC Value: 30
+ - Number of Methods Called: 24 - RFC Value: 31
+ - Number of Methods Called: 25 - RFC Value: 32
+ - Number of Methods Called: 26 - RFC Value: 33
+ - Number of Methods Called: 27 - RFC Value: 34
+ - Number of Methods Called: 28 - RFC Value: 35
+ - Number of Methods Called: 29 - RFC Value: 36
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
+Class Name: Fox - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 8 - RFC Value: 15
+ - Number of Methods Called: 9 - RFC Value: 16
+ - Number of Methods Called: 16 - RFC Value: 23
+ - Number of Methods Called: 17 - RFC Value: 24
+ - Number of Methods Called: 18 - RFC Value: 25
+ - Number of Methods Called: 19 - RFC Value: 26
+ - Number of Methods Called: 20 - RFC Value: 27
+ - Number of Methods Called: 21 - RFC Value: 28
+ - Number of Methods Called: 22 - RFC Value: 29
+ - Number of Methods Called: 23 - RFC Value: 30
+ - Number of Methods Called: 24 - RFC Value: 31
+ - Number of Methods Called: 25 - RFC Value: 32
+ - Number of Methods Called: 26 - RFC Value: 33
+ - Number of Methods Called: 28 - RFC Value: 35
+ - Number of Methods Called: 29 - RFC Value: 36
+ - Number of Methods Called: 30 - RFC Value: 37
+ - Number of Methods Called: 31 - RFC Value: 38
+ - Number of Methods Called: 32 - RFC Value: 39
+ - Number of Methods Called: 33 - RFC Value: 40
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
+Class Name: GraphView - Number of Methods: 5 - Number of Methods Called: 0 - RFC Value: 5
+ - Number of Methods Called: 1 - RFC Value: 6
+ - Number of Methods Called: 2 - RFC Value: 7
+ - Number of Methods Called: 3 - RFC Value: 8
+ - Number of Methods Called: 4 - RFC Value: 9
+ - Number of Methods Called: 5 - RFC Value: 10
+ - Number of Methods Called: 6 - RFC Value: 11
+ - Number of Methods Called: 7 - RFC Value: 12
+ - Number of Methods Called: 8 - RFC Value: 13
+ - Number of Methods Called: 9 - RFC Value: 14
+ - Number of Methods Called: 10 - RFC Value: 15
+ - Number of Methods Called: 11 - RFC Value: 16
+ - Number of Methods Called: 12 - RFC Value: 17
+ - Number of Methods Called: 13 - RFC Value: 18
+ - Number of Methods Called: 14 - RFC Value: 19
+ - Number of Methods Called: 15 - RFC Value: 20
+ - Number of Methods Called: 16 - RFC Value: 21
+ - Number of Methods Called: 17 - RFC Value: 22
+Class Name: GraphPanel - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 4 - RFC Value: 11
+ - Number of Methods Called: 5 - RFC Value: 12
+ - Number of Methods Called: 6 - RFC Value: 13
+ - Number of Methods Called: 7 - RFC Value: 14
+ - Number of Methods Called: 8 - RFC Value: 15
+ - Number of Methods Called: 9 - RFC Value: 16
+ - Number of Methods Called: 10 - RFC Value: 17
+ - Number of Methods Called: 11 - RFC Value: 18
+ - Number of Methods Called: 12 - RFC Value: 19
+ - Number of Methods Called: 13 - RFC Value: 20
+ - Number of Methods Called: 14 - RFC Value: 21
+ - Number of Methods Called: 15 - RFC Value: 22
+ - Number of Methods Called: 16 - RFC Value: 23
+ - Number of Methods Called: 17 - RFC Value: 24
+ - Number of Methods Called: 18 - RFC Value: 25
+ - Number of Methods Called: 19 - RFC Value: 26
+ - Number of Methods Called: 20 - RFC Value: 27
+ - Number of Methods Called: 21 - RFC Value: 28
+ - Number of Methods Called: 22 - RFC Value: 29
+ - Number of Methods Called: 23 - RFC Value: 30
+ - Number of Methods Called: 24 - RFC Value: 31
+ - Number of Methods Called: 25 - RFC Value: 32
+ - Number of Methods Called: 26 - RFC Value: 33
+ - Number of Methods Called: 27 - RFC Value: 34
+ - Number of Methods Called: 28 - RFC Value: 35
+ - Number of Methods Called: 29 - RFC Value: 36
+ - Number of Methods Called: 30 - RFC Value: 37
+ - Number of Methods Called: 31 - RFC Value: 38
+ - Number of Methods Called: 32 - RFC Value: 39
+ - Number of Methods Called: 33 - RFC Value: 40
+ - Number of Methods Called: 34 - RFC Value: 41
+ - Number of Methods Called: 35 - RFC Value: 42
+ - Number of Methods Called: 36 - RFC Value: 43
+ - Number of Methods Called: 37 - RFC Value: 44
+ - Number of Methods Called: 38 - RFC Value: 45
+ - Number of Methods Called: 39 - RFC Value: 46
+ - Number of Methods Called: 40 - RFC Value: 47
+ - Number of Methods Called: 41 - RFC Value: 48
+ - Number of Methods Called: 42 - RFC Value: 49
+ - Number of Methods Called: 43 - RFC Value: 50
+ - Number of Methods Called: 44 - RFC Value: 51
+ - Number of Methods Called: 45 - RFC Value: 52
+ - Number of Methods Called: 46 - RFC Value: 53
+ - Number of Methods Called: 47 - RFC Value: 54
+ - Number of Methods Called: 48 - RFC Value: 55
+ - Number of Methods Called: 49 - RFC Value: 56
+ - Number of Methods Called: 50 - RFC Value: 57
+ - Number of Methods Called: 51 - RFC Value: 58
+ - Number of Methods Called: 52 - RFC Value: 59
+ - Number of Methods Called: 53 - RFC Value: 60
+ - Number of Methods Called: 54 - RFC Value: 61
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
+Class Name: GridView - Number of Methods: 5 - Number of Methods Called: 0 - RFC Value: 5
+ - Number of Methods Called: 3 - RFC Value: 8
+ - Number of Methods Called: 4 - RFC Value: 9
+ - Number of Methods Called: 5 - RFC Value: 10
+ - Number of Methods Called: 6 - RFC Value: 11
+ - Number of Methods Called: 8 - RFC Value: 13
+ - Number of Methods Called: 9 - RFC Value: 14
+ - Number of Methods Called: 10 - RFC Value: 15
+ - Number of Methods Called: 12 - RFC Value: 17
+ - Number of Methods Called: 13 - RFC Value: 18
+ - Number of Methods Called: 14 - RFC Value: 19
+ - Number of Methods Called: 15 - RFC Value: 20
+ - Number of Methods Called: 16 - RFC Value: 21
+ - Number of Methods Called: 17 - RFC Value: 22
+ - Number of Methods Called: 18 - RFC Value: 23
+ - Number of Methods Called: 19 - RFC Value: 24
+ - Number of Methods Called: 20 - RFC Value: 25
+ - Number of Methods Called: 21 - RFC Value: 26
+ - Number of Methods Called: 22 - RFC Value: 27
+ - Number of Methods Called: 23 - RFC Value: 28
+ - Number of Methods Called: 24 - RFC Value: 29
+ - Number of Methods Called: 25 - RFC Value: 30
+ - Number of Methods Called: 26 - RFC Value: 31
+ - Number of Methods Called: 27 - RFC Value: 32
+ - Number of Methods Called: 28 - RFC Value: 33
+Class Name: FieldView - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
+ - Number of Methods Called: 1 - RFC Value: 5
+ - Number of Methods Called: 3 - RFC Value: 7
+ - Number of Methods Called: 4 - RFC Value: 8
+ - Number of Methods Called: 5 - RFC Value: 9
+ - Number of Methods Called: 6 - RFC Value: 10
+ - Number of Methods Called: 7 - RFC Value: 11
+ - Number of Methods Called: 8 - RFC Value: 12
+ - Number of Methods Called: 9 - RFC Value: 13
+ - Number of Methods Called: 10 - RFC Value: 14
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
+Class Name: Location - Number of Methods: 5 - Number of Methods Called: 0 - RFC Value: 5
+ - Number of Methods Called: 1 - RFC Value: 6
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
+Class Name: Rabbit - Number of Methods: 5 - Number of Methods Called: 0 - RFC Value: 5
+ - Number of Methods Called: 1 - RFC Value: 6
+ - Number of Methods Called: 2 - RFC Value: 7
+ - Number of Methods Called: 5 - RFC Value: 10
+ - Number of Methods Called: 6 - RFC Value: 11
+ - Number of Methods Called: 12 - RFC Value: 17
+ - Number of Methods Called: 13 - RFC Value: 18
+ - Number of Methods Called: 15 - RFC Value: 20
+ - Number of Methods Called: 16 - RFC Value: 21
+ - Number of Methods Called: 17 - RFC Value: 22
+ - Number of Methods Called: 18 - RFC Value: 23
+ - Number of Methods Called: 19 - RFC Value: 24
+ - Number of Methods Called: 20 - RFC Value: 25
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
+Class Name: Randomizer - Number of Methods: 2 - Number of Methods Called: 0 - RFC Value: 2
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
+Class Name: Simulator - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 4 - RFC Value: 11
+ - Number of Methods Called: 5 - RFC Value: 12
+ - Number of Methods Called: 6 - RFC Value: 13
+ - Number of Methods Called: 7 - RFC Value: 14
+ - Number of Methods Called: 8 - RFC Value: 15
+ - Number of Methods Called: 11 - RFC Value: 18
+ - Number of Methods Called: 12 - RFC Value: 19
+ - Number of Methods Called: 13 - RFC Value: 20
+ - Number of Methods Called: 14 - RFC Value: 21
+ - Number of Methods Called: 15 - RFC Value: 22
+ - Number of Methods Called: 16 - RFC Value: 23
+ - Number of Methods Called: 17 - RFC Value: 24
+ - Number of Methods Called: 18 - RFC Value: 25
+ - Number of Methods Called: 19 - RFC Value: 26
+ - Number of Methods Called: 20 - RFC Value: 27
+ - Number of Methods Called: 21 - RFC Value: 28
+ - Number of Methods Called: 22 - RFC Value: 29
+ - Number of Methods Called: 23 - RFC Value: 30
+ - Number of Methods Called: 25 - RFC Value: 32
+ - Number of Methods Called: 26 - RFC Value: 33
+ - Number of Methods Called: 27 - RFC Value: 34
+ - Number of Methods Called: 28 - RFC Value: 35
+ - Number of Methods Called: 29 - RFC Value: 36
+ - Number of Methods Called: 30 - RFC Value: 37
+ - Number of Methods Called: 31 - RFC Value: 38
+ - Number of Methods Called: 32 - RFC Value: 39
+ - Number of Methods Called: 33 - RFC Value: 40
+ - Number of Methods Called: 34 - RFC Value: 41
+
+File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
+Class Name: SimulatorView - Number of Methods: 4
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
+Class Name: Actor - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
+Class Name: City - Number of Methods: 6 - Number of Methods Called: 0 - RFC Value: 6
+ - Number of Methods Called: 1 - RFC Value: 7
+ - Number of Methods Called: 2 - RFC Value: 8
+ - Number of Methods Called: 3 - RFC Value: 9
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
+Class Name: CityGUI - Number of Methods: 1 - Number of Methods Called: 0 - RFC Value: 1
+ - Number of Methods Called: 1 - RFC Value: 2
+ - Number of Methods Called: 2 - RFC Value: 3
+ - Number of Methods Called: 3 - RFC Value: 4
+ - Number of Methods Called: 7 - RFC Value: 8
+ - Number of Methods Called: 8 - RFC Value: 9
+ - Number of Methods Called: 9 - RFC Value: 10
+ - Number of Methods Called: 10 - RFC Value: 11
+ - Number of Methods Called: 11 - RFC Value: 12
+ - Number of Methods Called: 12 - RFC Value: 13
+ - Number of Methods Called: 13 - RFC Value: 14
+ - Number of Methods Called: 14 - RFC Value: 15
+ - Number of Methods Called: 15 - RFC Value: 16
+ - Number of Methods Called: 16 - RFC Value: 17
+ - Number of Methods Called: 17 - RFC Value: 18
+ - Number of Methods Called: 18 - RFC Value: 19
+Class Name: CityView - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
+ - Number of Methods Called: 1 - RFC Value: 5
+ - Number of Methods Called: 2 - RFC Value: 6
+ - Number of Methods Called: 4 - RFC Value: 8
+ - Number of Methods Called: 5 - RFC Value: 9
+ - Number of Methods Called: 6 - RFC Value: 10
+ - Number of Methods Called: 7 - RFC Value: 11
+ - Number of Methods Called: 8 - RFC Value: 12
+ - Number of Methods Called: 9 - RFC Value: 13
+ - Number of Methods Called: 10 - RFC Value: 14
+ - Number of Methods Called: 11 - RFC Value: 15
+ - Number of Methods Called: 12 - RFC Value: 16
+ - Number of Methods Called: 13 - RFC Value: 17
+ - Number of Methods Called: 14 - RFC Value: 18
+ - Number of Methods Called: 15 - RFC Value: 19
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
+Class Name: DrawableItem - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
+Class Name: Item - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
+Class Name: Location - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 4 - RFC Value: 11
+ - Number of Methods Called: 5 - RFC Value: 12
+ - Number of Methods Called: 6 - RFC Value: 13
+ - Number of Methods Called: 7 - RFC Value: 14
+ - Number of Methods Called: 8 - RFC Value: 15
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
+Class Name: MissingPassengerException - Number of Methods: 1
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
+Class Name: Passenger - Number of Methods: 5 - Number of Methods Called: 0 - RFC Value: 5
+ - Number of Methods Called: 1 - RFC Value: 6
+ - Number of Methods Called: 2 - RFC Value: 7
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
+Class Name: PassengerSource - Number of Methods: 3 - Number of Methods Called: 0 - RFC Value: 3
+ - Number of Methods Called: 1 - RFC Value: 4
+ - Number of Methods Called: 2 - RFC Value: 5
+ - Number of Methods Called: 3 - RFC Value: 6
+ - Number of Methods Called: 4 - RFC Value: 7
+ - Number of Methods Called: 5 - RFC Value: 8
+ - Number of Methods Called: 6 - RFC Value: 9
+ - Number of Methods Called: 7 - RFC Value: 10
+ - Number of Methods Called: 8 - RFC Value: 11
+ - Number of Methods Called: 9 - RFC Value: 12
+ - Number of Methods Called: 10 - RFC Value: 13
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
+Class Name: Shuttle - Number of Methods: 6 - Number of Methods Called: 0 - RFC Value: 6
+ - Number of Methods Called: 1 - RFC Value: 7
+ - Number of Methods Called: 2 - RFC Value: 8
+ - Number of Methods Called: 3 - RFC Value: 9
+ - Number of Methods Called: 4 - RFC Value: 10
+ - Number of Methods Called: 5 - RFC Value: 11
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
+Class Name: Simulation - Number of Methods: 3 - Number of Methods Called: 0 - RFC Value: 3
+ - Number of Methods Called: 1 - RFC Value: 4
+ - Number of Methods Called: 2 - RFC Value: 5
+ - Number of Methods Called: 3 - RFC Value: 6
+ - Number of Methods Called: 4 - RFC Value: 7
+ - Number of Methods Called: 6 - RFC Value: 9
+ - Number of Methods Called: 7 - RFC Value: 10
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
+Class Name: Taxi - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 4 - RFC Value: 11
+ - Number of Methods Called: 5 - RFC Value: 12
+ - Number of Methods Called: 8 - RFC Value: 15
+ - Number of Methods Called: 9 - RFC Value: 16
+ - Number of Methods Called: 11 - RFC Value: 18
+ - Number of Methods Called: 12 - RFC Value: 19
+ - Number of Methods Called: 18 - RFC Value: 25
+ - Number of Methods Called: 19 - RFC Value: 26
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
+Class Name: TaxiCompany - Number of Methods: 6 - Number of Methods Called: 0 - RFC Value: 6
+ - Number of Methods Called: 2 - RFC Value: 8
+ - Number of Methods Called: 3 - RFC Value: 9
+ - Number of Methods Called: 4 - RFC Value: 10
+ - Number of Methods Called: 5 - RFC Value: 11
+ - Number of Methods Called: 6 - RFC Value: 12
+ - Number of Methods Called: 7 - RFC Value: 13
+ - Number of Methods Called: 8 - RFC Value: 14
+ - Number of Methods Called: 9 - RFC Value: 15
+ - Number of Methods Called: 10 - RFC Value: 16
+ - Number of Methods Called: 11 - RFC Value: 17
+ - Number of Methods Called: 12 - RFC Value: 18
+ - Number of Methods Called: 13 - RFC Value: 19
+ - Number of Methods Called: 14 - RFC Value: 20
+ - Number of Methods Called: 15 - RFC Value: 21
+ - Number of Methods Called: 16 - RFC Value: 22
+ - Number of Methods Called: 17 - RFC Value: 23
+
+File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
+Class Name: Vehicle - Number of Methods: 13 - Number of Methods Called: 0 - RFC Value: 13
+ - Number of Methods Called: 1 - RFC Value: 14
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
+Class Name: LogAnalyzer - Number of Methods: 3 - Number of Methods Called: 0 - RFC Value: 3
+ - Number of Methods Called: 1 - RFC Value: 4
+ - Number of Methods Called: 2 - RFC Value: 5
+ - Number of Methods Called: 3 - RFC Value: 6
+ - Number of Methods Called: 4 - RFC Value: 7
+ - Number of Methods Called: 5 - RFC Value: 8
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
+Class Name: LogEntry - Number of Methods: 6 - Number of Methods Called: 0 - RFC Value: 6
+ - Number of Methods Called: 1 - RFC Value: 7
+ - Number of Methods Called: 3 - RFC Value: 9
+ - Number of Methods Called: 4 - RFC Value: 10
+ - Number of Methods Called: 5 - RFC Value: 11
+ - Number of Methods Called: 6 - RFC Value: 12
+ - Number of Methods Called: 7 - RFC Value: 13
+ - Number of Methods Called: 8 - RFC Value: 14
+ - Number of Methods Called: 9 - RFC Value: 15
+ - Number of Methods Called: 10 - RFC Value: 16
+ - Number of Methods Called: 11 - RFC Value: 17
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
+Class Name: LogfileCreator - Number of Methods: 2 - Number of Methods Called: 0 - RFC Value: 2
+ - Number of Methods Called: 1 - RFC Value: 3
+ - Number of Methods Called: 2 - RFC Value: 4
+ - Number of Methods Called: 3 - RFC Value: 5
+ - Number of Methods Called: 4 - RFC Value: 6
+ - Number of Methods Called: 5 - RFC Value: 7
+ - Number of Methods Called: 6 - RFC Value: 8
+ - Number of Methods Called: 7 - RFC Value: 9
+ - Number of Methods Called: 8 - RFC Value: 10
+ - Number of Methods Called: 9 - RFC Value: 11
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
+Class Name: LogfileReader - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
+ - Number of Methods Called: 1 - RFC Value: 8
+ - Number of Methods Called: 2 - RFC Value: 9
+ - Number of Methods Called: 3 - RFC Value: 10
+ - Number of Methods Called: 4 - RFC Value: 11
+ - Number of Methods Called: 5 - RFC Value: 12
+ - Number of Methods Called: 6 - RFC Value: 13
+ - Number of Methods Called: 7 - RFC Value: 14
+ - Number of Methods Called: 8 - RFC Value: 15
+ - Number of Methods Called: 9 - RFC Value: 16
+ - Number of Methods Called: 10 - RFC Value: 17
+ - Number of Methods Called: 11 - RFC Value: 18
+ - Number of Methods Called: 12 - RFC Value: 19
+ - Number of Methods Called: 13 - RFC Value: 20
+ - Number of Methods Called: 14 - RFC Value: 21
+ - Number of Methods Called: 15 - RFC Value: 22
+ - Number of Methods Called: 16 - RFC Value: 23
+ - Number of Methods Called: 17 - RFC Value: 24
+ - Number of Methods Called: 18 - RFC Value: 25
+ - Number of Methods Called: 19 - RFC Value: 26
+ - Number of Methods Called: 20 - RFC Value: 27
+
+File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
+Class Name: LoglineTokenizer - Number of Methods: 1 - Number of Methods Called: 0 - RFC Value: 1
+ - Number of Methods Called: 1 - RFC Value: 2
+
+File: rsrc\Test.java
+Class Name: example - Number of Methods: 7
+File: rsrc\VisitorDemo.java
+Class Name: CarElement - Number of Methods: 1Class Name: CarElementVisitor - Number of Methods: 4Class Name: Wheel - Number of Methods: 3 - Number of Methods Called: 0 - RFC Value: 3
+Class Name: Body - Number of Methods: 2 - Number of Methods Called: 0 - RFC Value: 2
+Class Name: Engine - Number of Methods: 3 - Number of Methods Called: 0 - RFC Value: 3
+Class Name: Car - Number of Methods: 1 - Number of Methods Called: 0 - RFC Value: 1
+ - Number of Methods Called: 1 - RFC Value: 2
+ - Number of Methods Called: 2 - RFC Value: 3
+Class Name: CarElementDoVisitor - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
+ - Number of Methods Called: 1 - RFC Value: 5
+ - Number of Methods Called: 2 - RFC Value: 6
+ - Number of Methods Called: 3 - RFC Value: 7
+ - Number of Methods Called: 4 - RFC Value: 8
+Class Name: CarElementPrintVisitor - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
+ - Number of Methods Called: 1 - RFC Value: 5
+ - Number of Methods Called: 2 - RFC Value: 6
+ - Number of Methods Called: 3 - RFC Value: 7
+ - Number of Methods Called: 4 - RFC Value: 8
+Class Name: SalesVisitor - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
+ - Number of Methods Called: 1 - RFC Value: 5
+ - Number of Methods Called: 2 - RFC Value: 6
+ - Number of Methods Called: 3 - RFC Value: 7
+Class Name: MechanicVisitor - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
+ - Number of Methods Called: 1 - RFC Value: 5
+ - Number of Methods Called: 2 - RFC Value: 6
+ - Number of Methods Called: 3 - RFC Value: 7
+Class Name: VisitorDemo - Number of Methods: 1 - Number of Methods Called: 0 - RFC Value: 1
+ - Number of Methods Called: 1 - RFC Value: 2
+ - Number of Methods Called: 2 - RFC Value: 3
+ - Number of Methods Called: 3 - RFC Value: 4

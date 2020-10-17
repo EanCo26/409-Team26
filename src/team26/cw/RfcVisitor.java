@@ -24,34 +24,45 @@ public class RfcVisitor extends VoidVisitorAdapter {
    // private List<MethodDetails> lMD = new ArrayList<MethodDetails>();
     private int num = 0;
     private int methodSize = 0;
+    private String tempNode = "";
+    private ArrayList<Integer> nums = new ArrayList<Integer>();
 
     public String returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
         return returnString;
     }
 
-
+    @Override
     public void visit(ClassOrInterfaceDeclaration n, Object arg){
         methodSize = n.getMethods().size();
+
         if(num != 0)
         {
             returnString += "Class Name: " + n.getName()
-                    + " - Number of Methods: " + methodSize +
-                    " - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +  "\n";
+                    + " - Number of Methods: " + methodSize;// +
+                    //" - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +  "\n";
             num = 0;
         }
         else {
             returnString +=  "Class Name: " + n.getName()
-                    + " - Number of Methods: " + methodSize +
-                    " - RFC Value: " + (num + methodSize) + "\n";
+                    + " - Number of Methods: " + methodSize;// +
+                    //" - RFC Value: " + (num + methodSize) + "\n";
         }
 
 
         super.visit(n, arg);
     }
 
+    @Override
     public void visit(MethodCallExpr n, Object arg)
     {
+        if(tempNode != n.getScope().toString())
+        {
+           returnString += " - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +  "\n";
+        }
+
+        tempNode = n.getScope().toString();
+        System.out.println(n.getScope().toString());
         num++;
         super.visit(n, arg);
     }
