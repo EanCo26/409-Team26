@@ -34,7 +34,6 @@ public class LconVisitor extends VoidVisitorAdapter {
         fdList = cid.getFields();
         mdList = cid.getMethods();
         newCounter = 0;
-
         List<String> fieldVariables = new ArrayList<>();
         for (FieldDeclaration fieldDec:fdList) {
             for (VariableDeclarator varDec : fieldDec.getVariables()) {
@@ -42,6 +41,7 @@ public class LconVisitor extends VoidVisitorAdapter {
             }
         }
 
+        HashSet<String> Pair = new HashSet<>();
         for (String fieldVar:fieldVariables) {
             for(int i = 0; i < mdList.size(); i++){
                 for(int j = i; j < mdList.size(); j++) {
@@ -70,12 +70,14 @@ public class LconVisitor extends VoidVisitorAdapter {
 
                     if (statementJ.contains(fieldVar)) {
                         if(statementJ.contains(fieldVar)) {
-                            newCounter++;
+                            String currentPair = i + "" + j;
+                            Pair.add(currentPair);
                         }
                     }
                 }
             }
         }
+        newCounter += Pair.size();
         super.visit(cid, arg);
     }
 }
