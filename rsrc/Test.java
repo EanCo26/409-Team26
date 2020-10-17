@@ -1,29 +1,24 @@
 public class example {
 
+    int test = 0;
+    int test2 = 0;
     public example(){
-//        Boolean check = false;
-        if(check){
+//
+    }
 
-        }
-        switch (r) {
-            case 0:
-                return 0;
-            case 1:
-                return 0;
-            default:
-                break;
-        }
-        while(x == 0){
-        }
-        for(int i = 0; i++; i<5){
+    public void pair1(){
+        test=0;
+        test2 = 0;
+    }
 
-        }
-        for (int j: list) {
+    public void pair2(){
+        test=0;
+        test2 = 0;
+    }
 
-        }
-        do{
-
-        }while (x<5);
+    public void pair3(){
+        test=0;
+        test2 = 0;
     }
 
     public void CheckIfs(int a, int b) {
