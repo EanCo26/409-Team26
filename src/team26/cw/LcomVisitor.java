@@ -13,8 +13,6 @@ import java.util.*;
 public class LcomVisitor extends VoidVisitorAdapter {
 
     String returnString = "";
-    private List<FieldDeclaration> fdList = new ArrayList<FieldDeclaration>();
-    private List<MethodDeclaration> mdList = new ArrayList<MethodDeclaration>();
 
     String statementI = "";
     String statementJ = "";
@@ -25,17 +23,16 @@ public class LcomVisitor extends VoidVisitorAdapter {
         return returnString;
     }
 
-    // for every class LCOM is calculated 
+    // for every class LCOM is calculated
     @Override
     public void visit(ClassOrInterfaceDeclaration cid, Object arg) {
         returnString+= "Class: ------> " + cid.getName();
 
-        fdList = cid.getFields();
-        mdList = cid.getMethods();
-
-        // get list of all variables names in fields
+        // list of methods within class
+        List<MethodDeclaration> mdList = cid.getMethods();
+        // gets list of all field names within class
         List<String> fieldVariables = new ArrayList<>();
-        for (FieldDeclaration fieldDec:fdList) {
+        for (FieldDeclaration fieldDec:cid.getFields()) {
             for (VariableDeclarator varDec : fieldDec.getVariables()) {
                 fieldVariables.add(varDec.getNameAsString());
             }
@@ -43,11 +40,11 @@ public class LcomVisitor extends VoidVisitorAdapter {
 
         // list of pairs of methods
         HashSet<String> Pair = new HashSet<>();
-        // loop through every method
+        // loop through every method in class
         for(int i = 0; i < mdList.size(); i++){
             statementI = "";
 
-            // get every statement within method body and add to string
+            // get every statement within this method body and add to string
             MethodDeclaration methodDeclarationI = mdList.get(i);
             methodDeclarationI.getBody().ifPresent(blockStmt -> {
                 BlockStmt bStmt = methodDeclarationI.getBody().get();
@@ -55,14 +52,14 @@ public class LcomVisitor extends VoidVisitorAdapter {
                         statementI += stmt.toString();
                 }
             });
-            // loop through every method that comes after method in previous loop
+            // loop through every method in class that comes after method in previous loop
             for(int j = i; j < mdList.size(); j++) {
                 statementJ = "";
                 if(i==j){
                     continue;
                 }
 
-                // get every statement within method body and add to string
+                // get every statement within this method body and add to string
                 MethodDeclaration methodDeclarationJ = mdList.get(j);
                 methodDeclarationJ.getBody().ifPresent(blockStmt -> {
                     BlockStmt bStmt = methodDeclarationJ.getBody().get();
@@ -71,7 +68,7 @@ public class LcomVisitor extends VoidVisitorAdapter {
                     }
                 });
 
-                // if a field shows up in first method body and second method body then add to list of method pairs
+                // if a field name shows up in first method body and second method body then add to list of method pairs
                 // since list is a HashSet then there is no duplicates
                 for (String fieldVar:fieldVariables) {
                     if (statementI.contains(fieldVar)) {
@@ -83,12 +80,14 @@ public class LcomVisitor extends VoidVisitorAdapter {
                 }
             }
         }
+
         // for every possible pair of methods minus the number of method pairs then LCOM is calculated
         // return has the name of class and LCOM value
         int possiblePairs = (mdList.size() * (mdList.size() - 1))/2;
         int accPairs = Pair.size();
         int lcom = possiblePairs - accPairs;
         returnString += " - LCOM1 - " + lcom + "\n";
+
         super.visit(cid, arg);
     }
 }

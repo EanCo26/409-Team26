@@ -46,12 +46,16 @@ public class MetricCalc {
 
             // For every metric it runs through the Visitors and checks if there was a return
             // if so add metric return to array
-            /*metric = new WmcVisitor().returnOutput(cu, null);
+            // WMC Basic and WMC MCC is calculated in WmcVisitor
+            metric = new WmcVisitor().returnOutput(cu, null);
             MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
+
             metric = new RfcVisitor().returnOutput(cu, null);
             MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
-            metric = new CboVisitor().returnOutput(cu, null);
+
+            /*metric = new CboVisitor().returnOutput(cu, null);
             MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;*/
+
             metric = new LcomVisitor().returnOutput(cu, null);
             MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
 
