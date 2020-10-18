@@ -22,23 +22,20 @@ import java.util.List;
 public class RfcVisitor extends VoidVisitorAdapter {
 
     String returnString = "";
-    // private List<MethodDetails> lMD = new ArrayList<MethodDetails>();
-    private int num = 0;
     private int methodSize = 0;
-    private String tempNode = "";
-    private ArrayList<Integer> nums = new ArrayList<Integer>();
-
     boolean isFirstClass = true;
     String currentClassName = "";
-    HashSet<String> methodCalls = new HashSet<>();
+    HashSet<String> methodCalls = new HashSet<>(); //Use a hashset so that repeat method calls are not counted
 
     public String returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
-        recordOutput();
+        recordOutput(); //Need to call recordOutput once more to get the final class details added into the string
         return returnString;
     }
 
+    //Record the output here adding the info gathered to a string which we will return at the end of the file
     private void recordOutput(){
+        //Records the Class name, number of methods, number of methods called and will then calculate and record the Rfc value
         returnString += "Class Name: " + currentClassName
                 + " - Number of Methods: " + methodSize  +
                 " - Number of Methods Called: " + methodCalls.size() + " - RFC Value: " + (methodCalls.size() + methodSize) +  "\n";
@@ -47,6 +44,7 @@ public class RfcVisitor extends VoidVisitorAdapter {
     @Override
     public void visit(ClassOrInterfaceDeclaration n, Object arg){
 
+        //Check if it is the first class as this is handled differently since the method calls have not yet been visited
         if(!isFirstClass){
             recordOutput();
         }
@@ -55,20 +53,6 @@ public class RfcVisitor extends VoidVisitorAdapter {
         methodCalls.clear();
         isFirstClass = false;
 
-//        num = 0;
-//        if(num != 0)
-//        {
-//            returnString += "Class Name: " + n.getName()
-//                    + " - Number of Methods: " + methodSize;// +
-//                    //" - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +  "\n";
-//            num = 0;
-//        }
-//        else {
-//            returnString +=  "Class Name: " + n.getName()
-//                    + " - Number of Methods: " + methodSize;// +
-//                    //" - RFC Value: " + (num + methodSize) + "\n";
-//        }
-
 
         super.visit(n, arg);
     }
@@ -76,15 +60,7 @@ public class RfcVisitor extends VoidVisitorAdapter {
     @Override
     public void visit(MethodCallExpr n, Object arg)
     {
-        methodCalls.add(n.getNameAsString());
-//        if(tempNode != n.getScope().toString())
-//        {
-//           returnString += " - Number of Methods Called: " + num + " - RFC Value: " + (num + methodSize) +  "\n";
-//        }
-//
-//        tempNode = n.getScope().toString();
-//        System.out.println(n.getScope().toString());
-//        num++;
+        methodCalls.add(n.getNameAsString()); //Add all the method calls into the hashset
         super.visit(n, arg);
     }
 
