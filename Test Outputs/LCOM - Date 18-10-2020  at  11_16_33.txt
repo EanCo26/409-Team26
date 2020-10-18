@@ -1,67 +1,112 @@
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
-Lcom metric - -9
+Class: ------> Animal - LCOM - 9
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
-Lcom metric - -2
+Class: ------> Counter - LCOM - 3
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
-Lcom metric - -27
+Class: ------> Field - LCOM - 55
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
-Lcom metric - -14
+Class: ------> FieldStats - LCOM - 2
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
-Lcom metric - -10
+Class: ------> Fox - LCOM - 19
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
-Lcom metric - -5Lcom metric - -9
+Class: ------> GraphView - LCOM - 5
+Class: ------> GraphPanel - LCOM - 6
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
-Lcom metric - -5Lcom metric - -2
+Class: ------> GridView - LCOM - 6
+Class: ------> FieldView - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
-Lcom metric - -5
+Class: ------> Location - LCOM - 1
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
-Lcom metric - -3
+Class: ------> Rabbit - LCOM - 9
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
-Lcom metric - 1
+Class: ------> Randomizer - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
-Lcom metric - -8
+Class: ------> Simulator - LCOM - 11
+
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
-Lcom metric - 4
+Class: ------> SimulatorView - LCOM - 6
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
-Lcom metric - 1
+Class: ------> Actor - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
-Lcom metric - -9
+Class: ------> City - LCOM - 10
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
-Lcom metric - 1Lcom metric - -2
+Class: ------> CityGUI - LCOM - 0
+Class: ------> CityView - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
-Lcom metric - 1
+Class: ------> DrawableItem - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
-Lcom metric - 1
+Class: ------> Item - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
-Lcom metric - -14
+Class: ------> Location - LCOM - 1
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
-Lcom metric - 1
+Class: ------> MissingPassengerException - LCOM - 0
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
-Lcom metric - -5
+Class: ------> Passenger - LCOM - 6
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
-Lcom metric - 0
+Class: ------> PassengerSource - LCOM - 1
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
-Lcom metric - 1
+Class: ------> Shuttle - LCOM - 14
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
-Lcom metric - 2
+Class: ------> Simulation - LCOM - 3
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
-Lcom metric - -6
+Class: ------> Taxi - LCOM - 11
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
-Lcom metric - -7
+Class: ------> TaxiCompany - LCOM - 10
+
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
-Lcom metric - -51
+Class: ------> Vehicle - LCOM - 70
+
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
-Lcom metric - 0
+Class: ------> LogAnalyzer - LCOM - 1
+
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
-Lcom metric - -9
+Class: ------> LogEntry - LCOM - 6
+
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
-Lcom metric - 1
+Class: ------> LogfileCreator - LCOM - 1
+
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
-Lcom metric - -14
+Class: ------> LogfileReader - LCOM - 12
+
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
-Lcom metric - 1
+Class: ------> LoglineTokenizer - LCOM - 0
+
 File: rsrc\Test.java
-Lcom metric - 4
+Class: ------> example - LCOM - 18
+
 File: rsrc\VisitorDemo.java
-Lcom metric - 1Lcom metric - 4Lcom metric - 2Lcom metric - 1Lcom metric - 0Lcom metric - 1Lcom metric - 4Lcom metric - 4Lcom metric - 4Lcom metric - 4Lcom metric - 1
+Class: ------> CarElement - LCOM - 0
+Class: ------> CarElementVisitor - LCOM - 6
+Class: ------> Wheel - LCOM - 3
+Class: ------> Body - LCOM - 1
+Class: ------> Engine - LCOM - 3
+Class: ------> Car - LCOM - 0
+Class: ------> CarElementDoVisitor - LCOM - 6
+Class: ------> CarElementPrintVisitor - LCOM - 6
+Class: ------> SalesVisitor - LCOM - 6
+Class: ------> MechanicVisitor - LCOM - 6
+Class: ------> VisitorDemo - LCOM - 0

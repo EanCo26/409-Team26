@@ -17,6 +17,7 @@ public class MetricCalc {
 
     public static void main(String[] args) throws Exception {
 
+        // starts at rsrc directory and add every file that ends .java to a list of files
         List<String> filesInDir = new ArrayList<String>();
         File rootDir = new File("rsrc/");
         Files.walk(Paths.get(rootDir.getName())).forEach(path -> {
@@ -25,7 +26,9 @@ public class MetricCalc {
             }
         });
 
+        // Each metric is defined in the array - WMC is at index 0, RFC is at index 1, CBO is at index 2, LCOM is at index 3
         String MetricOutput[] = {"", "", "", ""};
+        // for every file found in rsrc that is a java file
         for (String filePath: filesInDir){
             File f = new File(filePath);
 
@@ -37,19 +40,20 @@ public class MetricCalc {
                 fis.close();
             }
 
-            //Output of test that is stored in strings to be written to files
-            // commented Wmc Visitor cos it runs but needs tweaking
+            // The file path that is being assessed is added to metric output later for readibility
             String fileOut = "\nFile: " + filePath + "\n";
             String metric = "";
 
+            // For every metric it runs through the Visitors and checks if there was a return
+            // if so add metric return to array
             /*metric = new WmcVisitor().returnOutput(cu, null);
-            MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;*/
+            MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
             metric = new RfcVisitor().returnOutput(cu, null);
             MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
-//            metric = new CboVisitor().returnOutput(cu, null);
-//            MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;
-//            metric = new LconVisitor().returnOutput(cu, null);
-//            MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
+            metric = new CboVisitor().returnOutput(cu, null);
+            MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;*/
+            metric = new LcomVisitor().returnOutput(cu, null);
+            MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
 
 //            ArrayList output = new CboVisitor().returnOutput(cu, null);
 //            //System.out.println("Andy = " + new CboVisitor().getCboClassList().get(0));
@@ -59,16 +63,18 @@ public class MetricCalc {
 
             
         }
-//Sets format for output file names using Date and Time
+        //Sets format for output file names using current Date and Time
         String outputFilePath = "";
         SimpleDateFormat  dateFormat = new SimpleDateFormat("'Date 'dd-MM-yyyy ' at ' HH_mm_ss");
         Date date = new Date(System.currentTimeMillis());
 
         for (int i = 0; i < 4; i ++){
             outputFilePath = "Test Outputs/";
+            // ignore metrics in array that have no return
             if(MetricOutput[i].isEmpty()){
                 continue;
             }
+            // Set file path output name to correspond with metric calculated
             switch (i){
                 case 0:
                     outputFilePath += "WMC - " + dateFormat.format(date) +".txt";
@@ -85,6 +91,7 @@ public class MetricCalc {
             }
             System.out.println(MetricOutput[i]);
 
+            // Find the path for output then write a new file with metrics for each returned metric
             Path file = Paths.get(outputFilePath);
             Files.write(file, MetricOutput[i].getBytes());
         }

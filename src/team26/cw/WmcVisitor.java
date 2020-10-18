@@ -17,12 +17,16 @@ public class WmcVisitor extends VoidVisitorAdapter {
     String returnString = "";
     private List<MethodDetails> lMD = new ArrayList<MethodDetails>();
 
+    // Start with accept to pass to visits
+    // records all methods in last class in file
+    // returns string of outputs
     public String returnOutput(CompilationUnit cu, Object arg){
         cu.accept(this, arg);
         recordMethodsInClass();
         return returnString;
     }
 
+    // if condition has &&/|| then add 1 condition every time either operator appears
     public int numOfConditions(String conditionExpr){
         int num = 1;
         if(conditionExpr.contains("||")||conditionExpr.contains("&&")){
@@ -38,6 +42,7 @@ public class WmcVisitor extends VoidVisitorAdapter {
         return num;
     }
 
+    // done at statement visitors to check that statements are not in constructor
     Boolean isWithinMethod(Statement statement){
         int line = statement.getEnd().get().line;
         for (MethodDetails details: lMD) {
@@ -48,6 +53,7 @@ public class WmcVisitor extends VoidVisitorAdapter {
         return false;
     }
 
+    // Adds all methods in class to be returned in returnOutput method as well as MCC value
     public void recordMethodsInClass(){
         int sumComplex = 0;
         if(!lMD.isEmpty()){
@@ -56,20 +62,24 @@ public class WmcVisitor extends VoidVisitorAdapter {
                         + " - Simple Complexity: " + details.getMethodDecisions() + "\n";
                 sumComplex += details.getMethodDecisions();
             }
-            returnString += "   Sum of Class Complexity: " + sumComplex + "\n";
+            // this is the WMC McCabe's Cyclomatic Complexity aggregated from all method complexities in class
+            returnString += "   WMC MCC: " + sumComplex + "\n";
             lMD.clear();
         }
     }
 
+    // for every class get the WMC Basic value
     @Override
     public void visit(ClassOrInterfaceDeclaration cid, Object arg) {
-
+        // records list of previous methods and then clears list - this done here to ensure that every class has it own recorded methods
         recordMethodsInClass();
+        // This is where WMC basic is found - the number of methods with unity of 1
         returnString += "   Class: " + cid.getName()
-                + " - Number of Methods: " + cid.getMethods().size() + "\n";
+                + " - WMC Basic: " + cid.getMethods().size() + "\n";
 
         super.visit(cid, arg);
     }
+    // for every new method add to list of method in current class and set attributes
     @Override
     public void visit(MethodDeclaration md, Object arg) {
         lMD.add(new MethodDetails());
@@ -84,6 +94,10 @@ public class WmcVisitor extends VoidVisitorAdapter {
         super.visit(md, arg);
     }
 
+
+    // Every statement is checked whether it is inside method scope - i.e. not in constructor
+    // add to complexity of the current method
+    // IfStmt, WhileStmt, DoStmt check for && and || operators - look at numOfConditions Method
     @Override
     public void visit(IfStmt ifStmt, Object arg) {
 

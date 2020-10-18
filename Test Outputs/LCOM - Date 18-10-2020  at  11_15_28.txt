@@ -1,112 +1,112 @@
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Animal.java
-   Class: Animal - Number of Methods: 6
+Class: ------> Animal - Lcom metric - 9
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Counter.java
-   Class: Counter - Number of Methods: 4
+Class: ------> Counter - Lcom metric - 3
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Field.java
-   Class: Field - Number of Methods: 12
+Class: ------> Field - Lcom metric - 55
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\FieldStats.java
-   Class: FieldStats - Number of Methods: 7
+Class: ------> FieldStats - Lcom metric - 2
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Fox.java
-   Class: Fox - Number of Methods: 7
+Class: ------> Fox - Lcom metric - 19
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GraphView.java
-   Class: GraphView - Number of Methods: 5
-   Class: GraphPanel - Number of Methods: 7
+Class: ------> GraphView - Lcom metric - 5
+Class: ------> GraphPanel - Lcom metric - 6
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\GridView.java
-   Class: GridView - Number of Methods: 5
-   Class: FieldView - Number of Methods: 4
+Class: ------> GridView - Lcom metric - 6
+Class: ------> FieldView - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Location.java
-   Class: Location - Number of Methods: 5
+Class: ------> Location - Lcom metric - 1
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Rabbit.java
-   Class: Rabbit - Number of Methods: 5
+Class: ------> Rabbit - Lcom metric - 9
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Randomizer.java
-   Class: Randomizer - Number of Methods: 2
+Class: ------> Randomizer - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\Simulator.java
-   Class: Simulator - Number of Methods: 7
+Class: ------> Simulator - Lcom metric - 11
 
 File: rsrc\CS409TestSystem2020\foxes-and-rabbits-graph\SimulatorView.java
-   Class: SimulatorView - Number of Methods: 4
+Class: ------> SimulatorView - Lcom metric - 6
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Actor.java
-   Class: Actor - Number of Methods: 1
+Class: ------> Actor - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\City.java
-   Class: City - Number of Methods: 6
+Class: ------> City - Lcom metric - 10
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\CityGUI.java
-   Class: CityGUI - Number of Methods: 1
-   Class: CityView - Number of Methods: 4
+Class: ------> CityGUI - Lcom metric - 0
+Class: ------> CityView - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\DrawableItem.java
-   Class: DrawableItem - Number of Methods: 1
+Class: ------> DrawableItem - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Item.java
-   Class: Item - Number of Methods: 1
+Class: ------> Item - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Location.java
-   Class: Location - Number of Methods: 7
+Class: ------> Location - Lcom metric - 1
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\MissingPassengerException.java
-   Class: MissingPassengerException - Number of Methods: 1
+Class: ------> MissingPassengerException - Lcom metric - 0
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Passenger.java
-   Class: Passenger - Number of Methods: 5
+Class: ------> Passenger - Lcom metric - 6
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\PassengerSource.java
-   Class: PassengerSource - Number of Methods: 3
+Class: ------> PassengerSource - Lcom metric - 1
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Shuttle.java
-   Class: Shuttle - Number of Methods: 6
+Class: ------> Shuttle - Lcom metric - 14
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Simulation.java
-   Class: Simulation - Number of Methods: 3
+Class: ------> Simulation - Lcom metric - 3
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Taxi.java
-   Class: Taxi - Number of Methods: 7
+Class: ------> Taxi - Lcom metric - 11
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\TaxiCompany.java
-   Class: TaxiCompany - Number of Methods: 6
+Class: ------> TaxiCompany - Lcom metric - 10
 
 File: rsrc\CS409TestSystem2020\taxi-company-later-stage\Vehicle.java
-   Class: Vehicle - Number of Methods: 13
+Class: ------> Vehicle - Lcom metric - 70
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogAnalyzer.java
-   Class: LogAnalyzer - Number of Methods: 3
+Class: ------> LogAnalyzer - Lcom metric - 1
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogEntry.java
-   Class: LogEntry - Number of Methods: 6
+Class: ------> LogEntry - Lcom metric - 6
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileCreator.java
-   Class: LogfileCreator - Number of Methods: 2
+Class: ------> LogfileCreator - Lcom metric - 1
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LogfileReader.java
-   Class: LogfileReader - Number of Methods: 7
+Class: ------> LogfileReader - Lcom metric - 12
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
-   Class: LoglineTokenizer - Number of Methods: 1
+Class: ------> LoglineTokenizer - Lcom metric - 0
 
 File: rsrc\Test.java
-   Class: example - Number of Methods: 4
+Class: ------> example - Lcom metric - 18
 
 File: rsrc\VisitorDemo.java
-   Class: CarElement - Number of Methods: 1
-   Class: CarElementVisitor - Number of Methods: 4
-   Class: Wheel - Number of Methods: 3
-   Class: Body - Number of Methods: 2
-   Class: Engine - Number of Methods: 3
-   Class: Car - Number of Methods: 1
-   Class: CarElementDoVisitor - Number of Methods: 4
-   Class: CarElementPrintVisitor - Number of Methods: 4
-   Class: SalesVisitor - Number of Methods: 4
-   Class: MechanicVisitor - Number of Methods: 4
-   Class: VisitorDemo - Number of Methods: 1
+Class: ------> CarElement - Lcom metric - 0
+Class: ------> CarElementVisitor - Lcom metric - 6
+Class: ------> Wheel - Lcom metric - 3
+Class: ------> Body - Lcom metric - 1
+Class: ------> Engine - Lcom metric - 3
+Class: ------> Car - Lcom metric - 0
+Class: ------> CarElementDoVisitor - Lcom metric - 6
+Class: ------> CarElementPrintVisitor - Lcom metric - 6
+Class: ------> SalesVisitor - Lcom metric - 6
+Class: ------> MechanicVisitor - Lcom metric - 6
+Class: ------> VisitorDemo - Lcom metric - 0
