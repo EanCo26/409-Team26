@@ -94,19 +94,3 @@ Class: ------> LogfileReader - LCOM1 - 12
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
 Class: ------> LoglineTokenizer - LCOM1 - 0
-
-File: rsrc\Test.java
-Class: ------> example - LCOM1 - 18
-
-File: rsrc\VisitorDemo.java
-Class: ------> CarElement - LCOM1 - 0
-Class: ------> CarElementVisitor - LCOM1 - 6
-Class: ------> Wheel - LCOM1 - 3
-Class: ------> Body - LCOM1 - 1
-Class: ------> Engine - LCOM1 - 3
-Class: ------> Car - LCOM1 - 0
-Class: ------> CarElementDoVisitor - LCOM1 - 6
-Class: ------> CarElementPrintVisitor - LCOM1 - 6
-Class: ------> SalesVisitor - LCOM1 - 6
-Class: ------> MechanicVisitor - LCOM1 - 6
-Class: ------> VisitorDemo - LCOM1 - 0

@@ -94,19 +94,3 @@ Class Name: LogfileReader - Number of Methods: 7 - Number of Methods Called: 16 
 
 File: rsrc\CS409TestSystem2020\weblog-analyzer\LoglineTokenizer.java
 Class Name: LoglineTokenizer - Number of Methods: 1 - Number of Methods Called: 2 - RFC Value: 3
-
-File: rsrc\Test.java
-Class Name: example - Number of Methods: 7 - Number of Methods Called: 0 - RFC Value: 7
-
-File: rsrc\VisitorDemo.java
-Class Name: CarElement - Number of Methods: 1 - Number of Methods Called: 0 - RFC Value: 1
-Class Name: CarElementVisitor - Number of Methods: 4 - Number of Methods Called: 0 - RFC Value: 4
-Class Name: Wheel - Number of Methods: 3 - Number of Methods Called: 1 - RFC Value: 4
-Class Name: Body - Number of Methods: 2 - Number of Methods Called: 1 - RFC Value: 3
-Class Name: Engine - Number of Methods: 3 - Number of Methods Called: 1 - RFC Value: 4
-Class Name: Car - Number of Methods: 1 - Number of Methods Called: 3 - RFC Value: 4
-Class Name: CarElementDoVisitor - Number of Methods: 4 - Number of Methods Called: 2 - RFC Value: 6
-Class Name: CarElementPrintVisitor - Number of Methods: 4 - Number of Methods Called: 2 - RFC Value: 6
-Class Name: SalesVisitor - Number of Methods: 4 - Number of Methods Called: 3 - RFC Value: 7
-Class Name: MechanicVisitor - Number of Methods: 4 - Number of Methods Called: 3 - RFC Value: 7
-Class Name: VisitorDemo - Number of Methods: 1 - Number of Methods Called: 1 - RFC Value: 2
