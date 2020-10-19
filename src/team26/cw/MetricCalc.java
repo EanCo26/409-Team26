@@ -50,22 +50,22 @@ public class MetricCalc {
                 fis.close();
             }
 
-            // The file path that is being assessed is added to metric output later for readibility
+            // The file path that is being assessed is added to metric output later for readability
             String fileOut = "\nFile: " + filePath + "\n";
             String metric = "";
 
-            // For every metric it runs through the Visitors and checks if there was a return
-            // if so add metric return to array
-            // WMC Basic and WMC MCC is calculated in WmcVisitor
+            /** For every metric it runs through the Visitors and checks if there was a return
+             if so add metric return to array
+             WMC Basic and WMC MCC is calculated in WmcVisitor**/
             metric = new WmcVisitor().returnOutput(cu, null);
             MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
 
             metric = new RfcVisitor().returnOutput(cu, null);
             MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
 
-            //This will check if it is currently the first file being run
-            //It will then add every class in the system to a list by going through each file
-            //This is used so that we can compare coupling
+            /**This will check if it is currently the first file being run
+            It will then add every class in the system to a list by going through each file
+            This is used so that we can compare coupling*/
             if (first)
             {
 

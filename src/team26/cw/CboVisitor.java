@@ -13,16 +13,6 @@ import java.util.List;
 
 public class CboVisitor extends VoidVisitorAdapter {
 
-
-    //Class names
-
-    // Class dec
-    // Method dec
-
-    //if class dec  or method dec contains a class name +1
-    //hash set
-    //count appearance in hash set
-
     String classList = "";
     String methodList = "";
     List<String> typeList = new ArrayList<>();
@@ -30,42 +20,38 @@ public class CboVisitor extends VoidVisitorAdapter {
     private  List<FieldDeclaration> fieldDec = new ArrayList<FieldDeclaration>();
     private  List<MethodDeclaration> methodDec = new ArrayList<MethodDeclaration>();
 
-    int score = 0;
-    private int num = 0;
-
-
+    //Passes classList to MetricCalc
     public String returnClassList(CompilationUnit cu, Object arg) {
         cu.accept(this, arg);
-
-
         return classList;
     }
+
+    //Passes methodList to MetricCalc
     public String returnMethodList(CompilationUnit cu, Object arg) {
         cu.accept(this, arg);
         return methodList;
     }
 
+    //Visits each class and returns the methods called within it
     public void visit(MethodCallExpr n, Object arg)
     {
-
         String s = n.getParentNodeForChildren().toString();
 
+        //Splits the 's' string using at the '.' to remove
+        //unnecessary information before methodList is returned
         if (s.contains(".")) {
 
             String[] temp = new String[]{};
             temp = s.split("\\.");
             s=temp[0];
         }
-        methodList += s + ".";
+        methodList += s + "."; //Adds '.' to separate each method call
+
         super.visit(n, arg);
     }
 
-    public int returnScore(CompilationUnit cu, Object arg) {
-        cu.accept(this, arg);
 
-        return score;
-    }
-
+    //Visits each class and records its name
     public void visit(ClassOrInterfaceDeclaration n, Object arg){
         classList +=  n.getNameAsString();
         super.visit(n, arg);
