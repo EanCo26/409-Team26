@@ -11,15 +11,22 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 
 public class MetricCalc {
+
 
     public static void main(String[] args) throws Exception {
 
         // starts at rsrc directory and add every file that ends .java to a list of files
         List<String> filesInDir = new ArrayList<String>();
         File rootDir = new File("rsrc/");
+
+
+        int counter= -1;
+
+
         Files.walk(Paths.get(rootDir.getName())).forEach(path -> {
             if(path.toString().endsWith(".java")){
                 filesInDir.add(path.toString());
@@ -30,6 +37,7 @@ public class MetricCalc {
         String MetricOutput[] = {"", "", "", ""};
         // for every file found in rsrc that is a java file
         for (String filePath: filesInDir){
+            counter++;
             File f = new File(filePath);
 
             FileInputStream fis = new FileInputStream(f);
@@ -53,8 +61,9 @@ public class MetricCalc {
             metric = new RfcVisitor().returnOutput(cu, null);
             MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
 
-            /*metric = new CboVisitor().returnOutput(cu, null);
-            MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;*/
+
+            //metric = cboClassList.get(counter) + "\n" + "Score: " + cboScore.get(counter) + "\n"
+            MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;
 
             metric = new LcomVisitor().returnOutput(cu, null);
             MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
@@ -99,5 +108,60 @@ public class MetricCalc {
             Path file = Paths.get(outputFilePath);
             Files.write(file, MetricOutput[i].getBytes());
         }
+
+
+
     }
+
+    public static void CalcCbo(CompilationUnit cu, int counter)
+    {
+        List<String> cboClassList = new ArrayList<>();
+        List<String> cboMethodList = new ArrayList<>();
+
+        HashSet<String> couples = new HashSet<String>();
+
+        List<Integer> cboScore = new ArrayList<Integer>();
+
+        cboClassList.add(new CboVisitor().returnClassList(cu, null));
+        cboMethodList.add(new CboVisitor().returnMethodList(cu, null));
+
+        for (int i = 0; i < cboClassList.size(); i++) {
+            for (int j = 0; j  < cboMethodList.size() ; j++) {
+                if(cboClassList.get(i).equals(cboMethodList.get(j)));
+                {
+
+                    //System.out.println(cboClassList.get(i).toString() + ":" + cboMethodList.get(j).toString());
+
+                    String cboTemp = cboClassList.get(i) + ":" + cboMethodList.get(j);
+
+                    couples.add(cboTemp);
+                }
+            }
+        }
+
+
+        int tempCount =0;
+        for (int i = 0; i < cboClassList.size(); i++) {
+
+            for (int j = 0; j< couples.size(); j++) {
+
+                if (couples.toArray()[j].toString().equals(cboClassList.get(i) + ":" + cboMethodList.get(i)));
+                {
+                    tempCount++;
+                }
+            }
+            cboScore.add(tempCount);
+            tempCount =0;
+        }
+
+           /* for (int i = 0; i < couples.size(); i++) {
+                if (couples.contains(cboClassList.get(i)));
+                {
+                    cboScore[i]++;
+                }
+            }*/
+
+
+    }
+
 }
