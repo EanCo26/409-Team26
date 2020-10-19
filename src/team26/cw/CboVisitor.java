@@ -56,7 +56,7 @@ public class CboVisitor extends VoidVisitorAdapter {
             temp = s.split("\\.");
             s=temp[0];
         }
-        methodList += s;
+        methodList += s + ".";
         super.visit(n, arg);
     }
 

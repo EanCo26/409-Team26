@@ -25,6 +25,8 @@ public class MetricCalc {
 
 
         int counter= -1;
+        boolean first = true;
+        List<String> cboClassLists = new ArrayList<>();
 
 
         Files.walk(Paths.get(rootDir.getName())).forEach(path -> {
@@ -55,18 +57,37 @@ public class MetricCalc {
             // For every metric it runs through the Visitors and checks if there was a return
             // if so add metric return to array
             // WMC Basic and WMC MCC is calculated in WmcVisitor
-            metric = new WmcVisitor().returnOutput(cu, null);
-            MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
+            //metric = new WmcVisitor().returnOutput(cu, null);
+            //MetricOutput[0] += metric.isEmpty() ? "": fileOut + metric;
 
-            metric = new RfcVisitor().returnOutput(cu, null);
-            MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
+            //metric = new RfcVisitor().returnOutput(cu, null);
+            //MetricOutput[1] += metric.isEmpty() ? "": fileOut + metric;
 
 
             //metric = cboClassList.get(counter) + "\n" + "Score: " + cboScore.get(counter) + "\n"
+            if (first)
+            {
+
+                for (String filePaths: filesInDir) {
+                    File fs = new File(filePaths);
+
+                    FileInputStream fiss = new FileInputStream(fs);
+                    CompilationUnit cus;
+                    try {
+                        cus = StaticJavaParser.parse(fs);
+                    } finally {
+                        fiss.close();
+                    }
+                    cboClassLists.add(new CboVisitor().returnClassList(cus, null));
+                }
+                first = false;
+            }
+            //CalcCbo(cu, counter, cboClassLists);
+            System.out.println(CalcCbo(cu, counter, cboClassLists));
             MetricOutput[2] += metric.isEmpty() ? "": fileOut + metric;
 
-            metric = new LcomVisitor().returnOutput(cu, null);
-            MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
+            //metric = new LcomVisitor().returnOutput(cu, null);
+            //MetricOutput[3] += metric.isEmpty() ? "": fileOut + metric;
 
 //            ArrayList output = new CboVisitor().returnOutput(cu, null);
 //            //System.out.println("Andy = " + new CboVisitor().getCboClassList().get(0));
@@ -113,55 +134,55 @@ public class MetricCalc {
 
     }
 
-    public static void CalcCbo(CompilationUnit cu, int counter)
+    public static int CalcCbo(CompilationUnit cu, int counter, List<String> cboClassList)
     {
-        List<String> cboClassList = new ArrayList<>();
-        List<String> cboMethodList = new ArrayList<>();
+
+        String cboMethodString = new String();
+        String[] cboMethodList = new String[]{};
 
         HashSet<String> couples = new HashSet<String>();
 
         List<Integer> cboScore = new ArrayList<Integer>();
 
-        cboClassList.add(new CboVisitor().returnClassList(cu, null));
-        cboMethodList.add(new CboVisitor().returnMethodList(cu, null));
+        cboMethodString = (new CboVisitor().returnMethodList(cu, null));
+        cboMethodList = cboMethodString.split("\\.");
 
-        for (int i = 0; i < cboClassList.size(); i++) {
-            for (int j = 0; j  < cboMethodList.size() ; j++) {
-                if(cboClassList.get(i).equals(cboMethodList.get(j)));
-                {
-
-                    //System.out.println(cboClassList.get(i).toString() + ":" + cboMethodList.get(j).toString());
-
-                    String cboTemp = cboClassList.get(i) + ":" + cboMethodList.get(j);
-
-                    couples.add(cboTemp);
-                }
-            }
-        }
+        System.out.println(cboClassList);
+        System.out.println(cboMethodList[0]);
 
 
         int tempCount =0;
         for (int i = 0; i < cboClassList.size(); i++) {
-
-            for (int j = 0; j< couples.size(); j++) {
-
-                if (couples.toArray()[j].toString().equals(cboClassList.get(i) + ":" + cboMethodList.get(i)));
+            for (int j = 0; j  < cboMethodList.length ; j++) {
+                if(cboClassList.get(i).equals(cboMethodList[j]));
                 {
+
+                    //System.out.println(cboClassList.get(i).toString() + ":" + cboMethodList.get(j).toString());
+
+                    //String cboTemp = cboClassList.get(i) + ":" + cboMethodList[j];
+
+                    //couples.add(cboTemp);
                     tempCount++;
                 }
             }
-            cboScore.add(tempCount);
-            tempCount =0;
         }
 
-           /* for (int i = 0; i < couples.size(); i++) {
-                if (couples.contains(cboClassList.get(i)));
-                {
-                    cboScore[i]++;
+
+
+        /*for (int i = 0; i < cboClassList.size(); i++) {
+            for(int j =0; j<cboMethodList.length; j++) {
+                for (int k = 0; k < couples.size(); k++) {
+
+                    if (couples.toArray()[k].toString().equals(cboClassList.get(i) + ":" + cboMethodList[j])) ;
+                    {
+                        tempCount++;
+                    }
                 }
-            }*/
-
-
+            }
+        }*/
+//        cboScore.add(tempCount);
+        couples.clear();
+        return tempCount;
     }
 
 }
